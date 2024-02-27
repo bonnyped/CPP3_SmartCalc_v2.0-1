@@ -1,29 +1,33 @@
-#ifndef CONSOLEVIEW_H
-#define CONSOLEVIEW_H
+// "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "exampleController.h"
+#ifndef SRC_CONSOLEVIEW_H_
+#define SRC_CONSOLEVIEW_H_
 
-enum Choice
-{
-    SUM = 1,
-    SUB = 2,
-    MUL = 3,
-    DIV = 4,
-    RES = 5,
-    EXIT = 0,
-    NONE = -1
+#include <iostream>
+#include <string>
+
+#include "Controller.h"
+
+// int performChoice();
+enum Choice {
+  SUM = 1,
+  SUB = 2,
+  MUL = 3,
+  DIV = 4,
+  RES = 5,
+  EXIT = 0,
+  NONE = -1
 };
 
-class ConsoleView
-{
-    private:
-        ExampleController *controller;
-    public:
-        ConsoleView(ExampleController *c):controller(c){};
-        void displayMenu();
-        int performChoice();
-        double performNumericInput();
-        void startEventLoop();
+class ConsoleView {
+private:
+  ExampleController *controller;
+
+public:
+  explicit ConsoleView(ExampleController *c) : controller(c) {}
+  std::string getInputString();
 };
 
-#endif
+#endif // SRC_CONSOLEVIEW_H_
+
+// void displayMenu();
