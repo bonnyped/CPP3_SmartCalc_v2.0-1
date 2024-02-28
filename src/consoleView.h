@@ -20,14 +20,14 @@ enum Choice {
 };
 
 class ConsoleView {
-private:
+ private:
   ExampleController *controller;
 
-public:
+ public:
   explicit ConsoleView(ExampleController *c) : controller(c) {}
   std::string getInputString();
 };
 
-#endif // SRC_CONSOLEVIEW_H_
+#endif  // SRC_CONSOLEVIEW_H_
 
 // void displayMenu();

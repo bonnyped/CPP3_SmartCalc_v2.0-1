@@ -5,7 +5,7 @@ TEST_FLAGS  =  -lgtest -pthread -std=c++17  -lstdc++ -lpthread -lm
 all: clang compile run 
 
 clang: 
-	clang-format -i *.cpp *.h
+	clang-format --style=GOOGLE -i *.cpp *.h
 
 compile:
 	$(CC) *.cpp main.cc $(CCFLAGS)

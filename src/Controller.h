@@ -8,14 +8,14 @@
 #include "Model.h"
 
 class ExampleController {
-private:
+ private:
   s21::Model *model;
 
-public:
+ public:
   explicit ExampleController(s21::Model *m) : model(m) {}
 };
 
-#endif // SRC_CONTROLLER_H_
+#endif  // SRC_CONTROLLER_H_
 
 // double add(double a);
 // double sub(double a);
