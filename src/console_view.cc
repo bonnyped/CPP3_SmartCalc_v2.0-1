@@ -1,6 +1,6 @@
 // "Copyright [2023] <bonnyped, tg: @ltybcrf>"
 
-#include "./console_view.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/console_view.h"
 
 // std::string ConsoleView::getInputString() {
 //   std::string inputString;

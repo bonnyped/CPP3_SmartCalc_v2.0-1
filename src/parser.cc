@@ -1,6 +1,6 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "./parser.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/parser.h"
 
 namespace s21 {
 EntityType Parser::determEntity(const char &currentChar) {
@@ -23,25 +23,6 @@ Parser::vector_reference Parser::convertToPreRpn() {
     else
       getPreRpn().push_back(currentToken);
   }
-  // case EntityType::functions:
-  //   pushOrStack(currentToken);
-  //   break;
-  // case EntityType::xNum:
-  //   pushOrStack(currentToken);
-  //   break;
-  // case EntityType::operations:
-  //   pushOrStack(currentToken);
-  //   break;
-  // }
-  // if (!getStack().empty()) {
-  //   while (!getStack().empty()) {
-  //     if (getStack().top().getLexeme() == '(')
-  //       throw std::logic_error("Unpaired brackets");
-  //     getRpn().push_back(getStack().top());
-  //     getStack().pop();
-  //   }
-  // }
-
   return getPreRpn();
 }
 
@@ -61,37 +42,13 @@ Token Parser::getToken(clexeme_reference currentChar, cmap_reference map) {
   return it != map.end() ? it->second : map.find(0)->second;
 }
 
-void Parser::pushOrStack(ctoken_reference currentToken) {
-  char currentChar = currentToken.getLexeme();
-  currentChar == 'x'   ? getRpn().push_back(currentToken)
-  : currentChar == ')' ? unloadBeforeOpenBracket(currentToken)
-                       : unloadBeforeLE(currentToken);
+const std::string Parser::getInputSubStr(const size_type index) {
+  return &inputStr_[index];
 }
 
-void Parser::unloadBeforeOpenBracket(Token toPush) {
-  if (toPush.getLexeme() == ')') {
-    while (!getStack().empty() && getStack().top().getLexeme() != '(') {
-      getRpn().push_back(getStack().top());
-      getStack().pop();
-    }
-    !getStack().empty() && getStack().top().getLexeme() == '('
-        ? getStack().pop()
-        : throw std::logic_error("Unpaired brackets");
-  }
+lexeme_type Parser::getInputStrChar(const size_type index) {
+  lexeme_type result = inputStr_.at(index);
+  return result;
 }
 
-void Parser::unloadBeforeLE(Token toPush) {
-  bool skip = true;
-  while (!getStack().empty() && getStack().top().getLexeme() != '(' &&
-         getStack().top().getAssocitivity() != Associativity::right && skip) {
-    if (getStack().top().getEntity() == EntityType::functions ||
-        getStack().top().getPriority() >= toPush.getPriority()) {
-      getRpn().push_back(getStack().top());
-      getStack().pop();
-    } else {
-      skip = false;
-    }
-  }
-  getStack().push(toPush);
-}
 };  // namespace s21

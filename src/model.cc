@@ -1,6 +1,6 @@
 // // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "./model.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/model.h"
 
 // char s21::Model::determAlphabetic(char *currentChar, size_type *outer_index)
 // {

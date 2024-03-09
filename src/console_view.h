@@ -6,7 +6,7 @@
 #include <iostream>
 #include <string>
 
-#include "./controller.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/controller.h"
 
 // int performChoice();
 enum Choice {

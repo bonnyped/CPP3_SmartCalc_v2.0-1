@@ -8,11 +8,13 @@
 #include <utility>
 #include <vector>
 
-#include "./token.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/parser.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/token.h"
 
 namespace s21 {
 class Validator {
  private:
+  using vector_type = std::vector<Token>;
   std::map<EntityType, std::vector<bool>> validatorMap_ = {
       {EntityType::first_sybol_in_string,
        {true, true, false, true, true, false, true, false}},
@@ -36,9 +38,13 @@ class Validator {
        {false, true, false, false, false, true, true, false}}
       /*func, num, oper,  unary, open,  close, xnum, bad */
   };
+  vector_type output_;
+  void checkSequence(const vector_type &input);
 
  public:
-  void checkSequence(const std::vector<Token> &input);
+  void ValidateVector(const vector_type &input) { checkSequence(input); }
+  vector_type getValidatedVector() { return output_; }
 };
 }  // namespace s21
+
 #endif  // SRC_VALIDATOR_H_

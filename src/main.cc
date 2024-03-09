@@ -1,6 +1,6 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "./console_view.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/console_view.h"
 
 using namespace s21;
 using namespace std;
@@ -14,14 +14,17 @@ int main() {
   Parser c(b.preparingStr());
 
   c.convertToPreRpn();
-  for (auto elem : c.getPreRpn()) {
-    elem.getEntity() == EntityType::numeric ? std::cout << elem.getNumber()
-                                            : std::cout << elem.getLexeme();
-  }
-  std::cout << '\n';
   Validator d;
+  Converter f;
   try {
-    d.checkSequence(c.getPreRpn());
+    d.ValidateVector(c.getPreRpn());
+    f.convertToRpn(d.getValidatedVector());
+    for (auto elem : f.getRpn()) {
+      elem.getEntity() == EntityType::numeric ? std::cout << elem.getNumber()
+                                              : std::cout << elem.getLexeme();
+    }
+    std::cout << '\n';
+
   } catch (const std::exception& e) {
     std::cerr << e.what() << '\n';
   }

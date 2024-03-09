@@ -1,9 +1,9 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "./validator.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/validator.h"
 
 namespace s21 {
-void Validator::checkSequence(const std::vector<Token> &input) {
+void Validator::checkSequence(const vector_type &input) {
   EntityType prev = EntityType::first_sybol_in_string;
   EntityType curr = prev;
   int8_t check = 1;
@@ -16,6 +16,7 @@ void Validator::checkSequence(const std::vector<Token> &input) {
           : prev = (check == 2 ? EntityType::last_symbol_in_sytring : curr);
     }
   }
+  output_ = input;
 }
 
 }  // namespace s21

@@ -10,9 +10,9 @@
 #include <string>
 #include <vector>
 
-#include "./coocker.h"
-#include "./parser.h"
-#include "./validator.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/converter.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/coocker.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/validator.h"
 
 namespace s21 {
 
