@@ -1,6 +1,6 @@
 // // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-// #include "Model.h"
+#include "./model.h"
 
 // char s21::Model::determAlphabetic(char *currentChar, size_type *outer_index)
 // {

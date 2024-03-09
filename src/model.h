@@ -10,24 +10,17 @@
 #include <string>
 #include <vector>
 
-#include "ParseString.h"
-#include "PreParse.h"
+#include "./coocker.h"
+#include "./parser.h"
+#include "./validator.h"
 
 namespace s21 {
-
-// enum class Priority : int8_t { min, mid, max, pref, highest, number };
-
-struct EpnString {
-  char operation_;
-  // Priority priority_;
-  double operand_;
-};
 
 class Model : public std::string {
  public:
   // using size_type = std::size_t;
   using reference = Model &;
-  using epnString = std::vector<EpnString>;
+  Model() {}
 
   // void parseString(epnString Epn, epnString Stack);
   // // void validation();

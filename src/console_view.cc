@@ -1,14 +1,14 @@
 // "Copyright [2023] <bonnyped, tg: @ltybcrf>"
 
-#include "consoleView.h"
+#include "./console_view.h"
 
-std::string ConsoleView::getInputString() {
-  std::string inputString;
-  std::cout << "Input the expression: ";
-  std::cin >> inputString;
-  // std::cout << inputString << std::endl;
-  return inputString;
-}
+// std::string ConsoleView::getInputString() {
+//   std::string inputString;
+//   std::cout << "Input the expression: ";
+//   std::cin >> inputString;
+//   // std::cout << inputString << std::endl;
+//   return inputString;
+// }
 
 // void ConsoleView::startEventLoop() {
 //   while (true) {

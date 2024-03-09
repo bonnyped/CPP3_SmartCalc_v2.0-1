@@ -5,15 +5,17 @@
 
 #include <iostream>
 
-#include "Model.h"
+#include "./model.h"
 
+namespace s21 {
 class ExampleController {
- private:
-  s21::Model *model;
+  //  private:
+  //   Model *model;
 
- public:
-  explicit ExampleController(s21::Model *m) : model(m) {}
+  //  public:
+  //   explicit ExampleController(Model *m) : model(m) {}
 };
+};  // namespace s21
 
 #endif  // SRC_CONTROLLER_H_
 
