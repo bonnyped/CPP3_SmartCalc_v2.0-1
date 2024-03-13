@@ -1,6 +1,6 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/parser.h"
+#include "parser.h"
 
 namespace s21 {
 EntityType Parser::determEntity(const char &currentChar) {

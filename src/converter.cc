@@ -1,6 +1,6 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/converter.h"
+#include "converter.h"
 
 namespace s21 {
 Converter::vector_type Converter::convertToRpn(cvector_reference input) {
@@ -87,4 +87,5 @@ Converter::cvector_reference Converter::convertedResultForTest(
   }
   return forTesting_;
 }
-};  // namespace s21
+
+}  // namespace s21

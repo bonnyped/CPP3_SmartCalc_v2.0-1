@@ -8,14 +8,23 @@
 #include <utility>
 #include <vector>
 
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/parser.h"
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/token.h"
+#include "parser.h"
+#include "token.h"
 
 namespace s21 {
 class Validator {
  private:
   using vector_type = std::vector<Token>;
-  using cvector_reference = const vector_type;
+  using cvector_type = const vector_type;
+  using cvector_reference = cvector_type &;
+
+ public:
+  Validator() {}
+  explicit Validator(cvector_type input) { checkSequence(input); }
+  void checkSequence(cvector_reference input);
+  vector_type getValidatedVector() { return output_; }
+
+ private:
   std::map<EntityType, std::vector<bool>> validatorMap_ = {
       {EntityType::first_sybol_in_string,
        {true, true, false, true, true, false, true, false}},
@@ -28,7 +37,7 @@ class Validator {
       {EntityType::unary_minus,
        {true, true, false, false, true, false, true, false}},
       {EntityType::openBracket,
-       {true, true, false, true, true, false, false, false}},
+       {true, true, false, true, true, false, true, false}},
       {EntityType::closeBracket,
        {false, false, true, false, false, true, true, false}},
       {EntityType::xNum,
@@ -40,12 +49,6 @@ class Validator {
       /*func, num, oper,  unary, open,  close, xnum, bad */
   };
   vector_type output_;
-
- public:
-  Validator() {}
-  explicit Validator(cvector_reference input) { checkSequence(input); }
-  void checkSequence(const vector_type &input);
-  vector_type getValidatedVector() { return output_; }
 };
 }  // namespace s21
 

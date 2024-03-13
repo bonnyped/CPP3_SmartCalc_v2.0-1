@@ -34,13 +34,6 @@ using priority_type = Priority;
 using cpriority_reference = const Priority &;
 
 class Token {
- private:
-  EntityType entity_{};
-  number_type number_{};
-  lexeme_type lexeme_{};
-  priority_type priority_{};
-  Associativity associativity_{};
-
  public:
   Token() {}
   Token(EntityType entity, number_type number, lexeme_type lexeme,
@@ -50,15 +43,20 @@ class Token {
         lexeme_(lexeme),
         priority_(priority),
         associativity_(associativity) {}
-
   EntityType getEntity() const { return entity_; }
-  EntityType &setEntity() { return entity_;}
   number_type getNumber() const { return number_; }
   number_reference setNumber() { return number_; }
   lexeme_reference setLexeme() { return lexeme_; }
   clexeme_reference getLexeme() const { return lexeme_; }
   cpriority_reference getPriority() const { return priority_; }
   Associativity getAssocitivity() const { return associativity_; }
+
+ private:
+  EntityType entity_{};
+  number_type number_{};
+  lexeme_type lexeme_{};
+  priority_type priority_{};
+  Associativity associativity_{};
 };
 
 using ctoken_reference = const Token &;
@@ -66,6 +64,9 @@ using map_type = std::map<char, Token>;
 using cmap_reference = const map_type &;
 
 class FillTokenMap {
+ public:
+  cmap_reference getMap() { return map_; }
+
  private:
   map_type map_{
       {{0, {EntityType::bad, 0, 35, Priority::bad_symbol, Associativity::left}},
@@ -109,10 +110,7 @@ class FillTokenMap {
         {EntityType::closeBracket, 0, ')', Priority::higest,
          Associativity::left}},
        {'x', {EntityType::xNum, 0, 'x', Priority::push, Associativity::left}}}};
-
- public:
-  cmap_reference getMap() { return map_; }
 };
-};  // namespace s21
+}  // namespace s21
 
 #endif  // SRC_TOKEN_H_

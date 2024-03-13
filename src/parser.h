@@ -7,7 +7,7 @@
 #include <utility>
 #include <vector>
 
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/token.h"
+#include "token.h"
 
 namespace s21 {
 class Parser {
@@ -18,18 +18,19 @@ class Parser {
   using cstring_reference = const string_type &;
   using vector_type = std::vector<Token>;
   using vector_reference = vector_type &;
-  vector_type pre_rpn_;
   EntityType determEntity(const char &currentChar);
   size_type pushNumber(cstring_reference str, csize_type index,
                        cmap_reference map);
   Token getToken(clexeme_reference currentChar, cmap_reference map);
 
  public:
+  vector_reference convertToPreRpn(cstring_reference input);
   Parser() {}
-  explicit Parser(cstring_reference input, const double xnum) { convertToPreRpn(input, xnum); }
+  explicit Parser(cstring_reference input) { convertToPreRpn(input); }
+  vector_reference getPreRpn() { return PreRpn_; }
 
-  vector_reference convertToPreRpn(cstring_reference input, const double xnum);
-  vector_reference getPreRpn() { return pre_rpn_; }
+ private:
+  vector_type PreRpn_;
 };
 }  // namespace s21
 

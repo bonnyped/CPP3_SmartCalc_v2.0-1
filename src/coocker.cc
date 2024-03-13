@@ -1,6 +1,8 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/coocker.h"
+#include "coocker.h"
+
+#include <functional>
 
 void s21::Coocker::removeWhitespaces() {
   auto it = std::remove_if(getStr().begin(), getStr().end(), isspace);

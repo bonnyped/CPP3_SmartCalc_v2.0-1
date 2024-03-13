@@ -9,22 +9,24 @@
 #include <stack>
 #include <vector>
 
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/token.h"
+#include "token.h"
 
 namespace s21 {
 class Calculator {
  private:
   using value_type = double;
-  using cvalue_reference = const double &;
+  using cvalue_type = const double;
   using stack_type = std::stack<value_type>;
-  stack_type calc_result;
+  using cvector_reference = const std::vector<s21::Token> &;
+  double applyAction(cvalue_type left_operand, cvalue_type right_operand,
+                     clexeme_reference operation);
 
  public:
-  Calculator() {}
-  double calculate(const std::vector<s21::Token> &input);
-  double applyAction(cvalue_reference left_operand,
-                     cvalue_reference right_operand,
-                     clexeme_reference operation);
+  Calculator() : calc_result_{} {}
+  value_type calculate(cvector_reference input, cvalue_type x_value);
+
+ private:
+  stack_type calc_result_;
 };
 }  // namespace s21
 
