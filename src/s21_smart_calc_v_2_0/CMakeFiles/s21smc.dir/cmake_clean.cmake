@@ -26,6 +26,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/s21smc.dir/view/depositcalc.cpp.o.d"
   "CMakeFiles/s21smc.dir/view/mainwindow.cpp.o"
   "CMakeFiles/s21smc.dir/view/mainwindow.cpp.o.d"
+  "CMakeFiles/s21smc.dir/view/qcustomplot/qcustomplot.cc.o"
+  "CMakeFiles/s21smc.dir/view/qcustomplot/qcustomplot.cc.o.d"
   "CMakeFiles/s21smc.dir/view/smartcalc.cpp.o"
   "CMakeFiles/s21smc.dir/view/smartcalc.cpp.o.d"
   "s21smc"

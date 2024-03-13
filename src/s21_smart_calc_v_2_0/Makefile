@@ -475,6 +475,30 @@ view/mainwindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/view/mainwindow.cpp.s
 .PHONY : view/mainwindow.cpp.s
 
+view/qcustomplot/qcustomplot.o: view/qcustomplot/qcustomplot.cc.o
+.PHONY : view/qcustomplot/qcustomplot.o
+
+# target to build an object file
+view/qcustomplot/qcustomplot.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/view/qcustomplot/qcustomplot.cc.o
+.PHONY : view/qcustomplot/qcustomplot.cc.o
+
+view/qcustomplot/qcustomplot.i: view/qcustomplot/qcustomplot.cc.i
+.PHONY : view/qcustomplot/qcustomplot.i
+
+# target to preprocess a source file
+view/qcustomplot/qcustomplot.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/view/qcustomplot/qcustomplot.cc.i
+.PHONY : view/qcustomplot/qcustomplot.cc.i
+
+view/qcustomplot/qcustomplot.s: view/qcustomplot/qcustomplot.cc.s
+.PHONY : view/qcustomplot/qcustomplot.s
+
+# target to generate assembly for a file
+view/qcustomplot/qcustomplot.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/view/qcustomplot/qcustomplot.cc.s
+.PHONY : view/qcustomplot/qcustomplot.cc.s
+
 view/smartcalc.o: view/smartcalc.cpp.o
 .PHONY : view/smartcalc.o
 
@@ -549,6 +573,9 @@ help:
 	@echo "... view/mainwindow.o"
 	@echo "... view/mainwindow.i"
 	@echo "... view/mainwindow.s"
+	@echo "... view/qcustomplot/qcustomplot.o"
+	@echo "... view/qcustomplot/qcustomplot.i"
+	@echo "... view/qcustomplot/qcustomplot.s"
 	@echo "... view/smartcalc.o"
 	@echo "... view/smartcalc.i"
 	@echo "... view/smartcalc.s"

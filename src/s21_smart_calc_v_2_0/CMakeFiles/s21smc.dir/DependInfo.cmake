@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/creditcalc.cpp" "CMakeFiles/s21smc.dir/view/creditcalc.cpp.o" "gcc" "CMakeFiles/s21smc.dir/view/creditcalc.cpp.o.d"
   "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/depositcalc.cpp" "CMakeFiles/s21smc.dir/view/depositcalc.cpp.o" "gcc" "CMakeFiles/s21smc.dir/view/depositcalc.cpp.o.d"
   "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/mainwindow.cpp" "CMakeFiles/s21smc.dir/view/mainwindow.cpp.o" "gcc" "CMakeFiles/s21smc.dir/view/mainwindow.cpp.o.d"
+  "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/qcustomplot/qcustomplot.cc" "CMakeFiles/s21smc.dir/view/qcustomplot/qcustomplot.cc.o" "gcc" "CMakeFiles/s21smc.dir/view/qcustomplot/qcustomplot.cc.o.d"
   "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/smartcalc.cpp" "CMakeFiles/s21smc.dir/view/smartcalc.cpp.o" "gcc" "CMakeFiles/s21smc.dir/view/smartcalc.cpp.o.d"
   )
 

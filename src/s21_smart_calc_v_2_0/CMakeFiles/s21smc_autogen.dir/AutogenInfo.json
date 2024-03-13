@@ -408,6 +408,12 @@
 			null
 		],
 		[
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/qcustomplot/qcustomplot.h",
+			"MU",
+			"LNTGOHXIOS/moc_qcustomplot.cpp",
+			null
+		],
+		[
 			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/smartcalc.h",
 			"MU",
 			"OTUN7GXZT4/moc_smartcalc.cpp",
@@ -516,6 +522,11 @@
 		],
 		[
 			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/qcustomplot/qcustomplot.cc",
 			"MU",
 			null
 		],
