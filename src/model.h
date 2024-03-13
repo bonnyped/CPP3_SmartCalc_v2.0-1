@@ -10,6 +10,7 @@
 #include <string>
 #include <vector>
 
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/calculator.h"
 #include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/converter.h"
 #include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/coocker.h"
 #include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/validator.h"

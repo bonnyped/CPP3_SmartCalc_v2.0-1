@@ -5,6 +5,7 @@
 
 #include <stack>
 #include <stdexcept>
+#include <string>
 #include <vector>
 
 #include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/parser.h"
@@ -17,18 +18,32 @@ class Converter {
   using cvector_reference = const vector_type &;
   using stack_type = std::stack<Token>;
   using stack_reference = stack_type &;
+  using string_type = std::string;
+  using string_reference = string_type &;
+  using cstring_reference = const string_type &;
   vector_type ReversePolishNotation_;
+  vector_type forTesting_;
+  string_type forViewRpn_;
   stack_type Stack_;
-
- public:
-  vector_type convertToRpn(cvector_reference input);
   void pushToRpn(ctoken_reference elem);
   void pushToStack(ctoken_reference elem);
-  void unloadStackWhileLe(ctoken_reference elem);
+  void unloadStackWhileLE(ctoken_reference elem);
+  bool isTopStackFunction();
+  bool isTopStackOPerationGE(ctoken_reference elem);
   void unloadStackBeforeOpenBracket();
   void fullUnloadStack();
-  vector_reference getRpn() { return ReversePolishNotation_; }
+  void convertRpnToStringForView();
   stack_reference getStack() { return Stack_; }
+
+ public:
+  Converter() {}
+  explicit Converter(cvector_reference input) { convertToRpn(input); }
+  vector_type convertToRpn(cvector_reference input);
+  vector_reference getRpn() { return ReversePolishNotation_; }
+  cvector_reference convertedResultForTest(cstring_reference input);
+  string_type getRpnToView() {
+      convertRpnToStringForView();
+      return forViewRpn_;}
 };
 }  // namespace s21
 

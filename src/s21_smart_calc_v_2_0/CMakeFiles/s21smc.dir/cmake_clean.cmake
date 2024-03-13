@@ -1,0 +1,38 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/s21smc_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/s21smc_autogen.dir/ParseCache.txt"
+  "s21smc_autogen"
+  "CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o"
+  "CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o.d"
+  "CMakeFiles/s21smc.dir/main.cpp.o"
+  "CMakeFiles/s21smc.dir/main.cpp.o.d"
+  "CMakeFiles/s21smc.dir/model/calculator.cc.o"
+  "CMakeFiles/s21smc.dir/model/calculator.cc.o.d"
+  "CMakeFiles/s21smc.dir/model/converter.cc.o"
+  "CMakeFiles/s21smc.dir/model/converter.cc.o.d"
+  "CMakeFiles/s21smc.dir/model/coocker.cc.o"
+  "CMakeFiles/s21smc.dir/model/coocker.cc.o.d"
+  "CMakeFiles/s21smc.dir/model/model.cc.o"
+  "CMakeFiles/s21smc.dir/model/model.cc.o.d"
+  "CMakeFiles/s21smc.dir/model/parser.cc.o"
+  "CMakeFiles/s21smc.dir/model/parser.cc.o.d"
+  "CMakeFiles/s21smc.dir/model/validator.cc.o"
+  "CMakeFiles/s21smc.dir/model/validator.cc.o.d"
+  "CMakeFiles/s21smc.dir/s21smc_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/s21smc.dir/s21smc_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/s21smc.dir/view/creditcalc.cpp.o"
+  "CMakeFiles/s21smc.dir/view/creditcalc.cpp.o.d"
+  "CMakeFiles/s21smc.dir/view/depositcalc.cpp.o"
+  "CMakeFiles/s21smc.dir/view/depositcalc.cpp.o.d"
+  "CMakeFiles/s21smc.dir/view/mainwindow.cpp.o"
+  "CMakeFiles/s21smc.dir/view/mainwindow.cpp.o.d"
+  "CMakeFiles/s21smc.dir/view/smartcalc.cpp.o"
+  "CMakeFiles/s21smc.dir/view/smartcalc.cpp.o.d"
+  "s21smc"
+  "s21smc.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/s21smc.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

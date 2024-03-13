@@ -16,7 +16,6 @@ class Coocker {
   value_type inputStr_;
 
  public:
-  Coocker() {}
   explicit Coocker(const value_type &rhs) : inputStr_(rhs) {}
   reference getStr() { return inputStr_; }
   void removeWhitespaces();
@@ -37,6 +36,6 @@ class entitesMap {
  public:
   map_type &getMap() { return map_; }
 };
-};  // namespace s21
+}  // namespace s21
 
 #endif  //  SRC_COOCKER_H_

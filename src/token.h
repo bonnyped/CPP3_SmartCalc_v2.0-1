@@ -52,6 +52,7 @@ class Token {
         associativity_(associativity) {}
 
   EntityType getEntity() const { return entity_; }
+  EntityType &setEntity() { return entity_;}
   number_type getNumber() const { return number_; }
   number_reference setNumber() { return number_; }
   lexeme_reference setLexeme() { return lexeme_; }

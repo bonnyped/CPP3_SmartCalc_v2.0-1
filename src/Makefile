@@ -5,17 +5,17 @@ TEST_FLAGS  =  -lgtest -pthread -std=c++17  -lstdc++ -lpthread -lm
 all: clang compile run 
 
 clang: 
-	clang-format --style=GOOGLE -i *.cc *.h
+	clang-format --style=GOOGLE -i *.cc *.cpp *.h ./tests/*.cc ./tests/*.h
 
 compile:
-	$(CC) *.cc $(CCFLAGS)
+	$(CC) *.cc main.cpp $(CCFLAGS)
 	
 run:	
 	./a.out
 
 test:
 	rm -rf ./tests/test
-	$(CC) -o ./tests/test $(CCFLAGS) ./tests/*.cpp ./*.cpp $(TEST_FLAGS)
+	$(CC) -o ./tests/test $(CCFLAGS) ./tests/*.cc ./*.cc $(TEST_FLAGS)
 	./tests/test
 	# make lcov
 

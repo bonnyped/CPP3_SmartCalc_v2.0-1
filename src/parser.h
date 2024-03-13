@@ -18,23 +18,19 @@ class Parser {
   using cstring_reference = const string_type &;
   using vector_type = std::vector<Token>;
   using vector_reference = vector_type &;
-  string_type inputStr_;
-  vector_type PreRpn_;
-
- public:
-  Parser() {}
-  explicit Parser(const string_reference rhs) : Parser{} { inputStr_ = rhs; }
-
+  vector_type pre_rpn_;
   EntityType determEntity(const char &currentChar);
-  vector_reference convertToPreRpn();
   size_type pushNumber(cstring_reference str, csize_type index,
                        cmap_reference map);
   Token getToken(clexeme_reference currentChar, cmap_reference map);
-  string_reference getInputStr() { return inputStr_; }
-  const string_type getInputSubStr(const size_type index);
-  lexeme_type getInputStrChar(const size_type index);
-  vector_reference getPreRpn() { return PreRpn_; }
+
+ public:
+  Parser() {}
+  explicit Parser(cstring_reference input, const double xnum) { convertToPreRpn(input, xnum); }
+
+  vector_reference convertToPreRpn(cstring_reference input, const double xnum);
+  vector_reference getPreRpn() { return pre_rpn_; }
 };
-};  // namespace s21
+}  // namespace s21
 
 #endif  //  SRC_PARSER_H_

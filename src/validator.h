@@ -15,6 +15,7 @@ namespace s21 {
 class Validator {
  private:
   using vector_type = std::vector<Token>;
+  using cvector_reference = const vector_type;
   std::map<EntityType, std::vector<bool>> validatorMap_ = {
       {EntityType::first_sybol_in_string,
        {true, true, false, true, true, false, true, false}},
@@ -39,10 +40,11 @@ class Validator {
       /*func, num, oper,  unary, open,  close, xnum, bad */
   };
   vector_type output_;
-  void checkSequence(const vector_type &input);
 
  public:
-  void ValidateVector(const vector_type &input) { checkSequence(input); }
+  Validator() {}
+  explicit Validator(cvector_reference input) { checkSequence(input); }
+  void checkSequence(const vector_type &input);
   vector_type getValidatedVector() { return output_; }
 };
 }  // namespace s21

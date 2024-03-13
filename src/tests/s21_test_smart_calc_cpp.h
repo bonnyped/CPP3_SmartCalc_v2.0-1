@@ -5,6 +5,6 @@
 
 #include <gtest/gtest.h>
 
-#include "../Model.h"
+#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/model.h"
 
 #endif  //  SRC_TESTS_S21_TEST_SMART_CALC_CPP_H_

@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DepositCalc</class>
+ <widget class="QWidget" name="DepositCalc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>584</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="PaymentPeriod">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>134</y>
+     <width>93</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>Per Day</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Week</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Month</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Quoter</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Two Quoters</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Year</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>At The End of Period</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="PeriodType">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>134</y>
+     <width>283</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Period Type</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTax_2">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>258</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Start Deposit Amount</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="termOfDeposit">
+   <property name="geometry">
+    <rect>
+     <x>632</x>
+     <y>10</y>
+     <width>125</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <number>18250</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="addAmmount">
+   <property name="geometry">
+    <rect>
+     <x>76</x>
+     <y>196</y>
+     <width>117</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <double>999999999999999.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="KeyRate">
+   <property name="geometry">
+    <rect>
+     <x>632</x>
+     <y>196</y>
+     <width>125</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="TotalInterestPayments">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>382</y>
+     <width>377</width>
+     <height>62</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+  border: 1px solid gray;
+}</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="depositAmount">
+   <property name="geometry">
+    <rect>
+     <x>632</x>
+     <y>258</y>
+     <width>125</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <double>999999999999999.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelStartDate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>72</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Start deposit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="depositEndTerm">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>444</y>
+     <width>377</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(255, 201, 157);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Deposit Amount At The End Of Term</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateStartDeposit">
+   <property name="geometry">
+    <rect>
+     <x>632</x>
+     <y>72</y>
+     <width>125</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximumDate">
+    <date>
+     <year>2101</year>
+     <month>1</month>
+     <day>5</day>
+    </date>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>2000</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+   <property name="date">
+    <date>
+     <year>2023</year>
+     <month>9</month>
+     <day>4</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="interstRateDeposit">
+   <property name="geometry">
+    <rect>
+     <x>632</x>
+     <y>134</y>
+     <width>125</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <double>999.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxAddition">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>196</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalInterest">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>382</y>
+     <width>377</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(255, 201, 157);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Total Interest Payment</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxTakeDown">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>258</y>
+     <width>71</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Drop</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelKeyRate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>196</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Max Key Rate In Year</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelDepositTerm">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>10</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Term in days</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="additionPeriod">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>196</y>
+     <width>93</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>One-time</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Month</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Two Months</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Quoter</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Two Quoters</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Year</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPushButton" name="CalcDeposit">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>10</y>
+     <width>377</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background-color: rgb(255, 145, 200);
+  color: white; 
+  border: 1px solid gray;
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF7832, stop: 1 #FF9739);
+}</string>
+   </property>
+   <property name="text">
+    <string>Calculate</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditAdd">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>196</y>
+     <width>93</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximumDateTime">
+    <datetime>
+     <hour>23</hour>
+     <minute>59</minute>
+     <second>59</second>
+     <year>2100</year>
+     <month>12</month>
+     <day>31</day>
+    </datetime>
+   </property>
+   <property name="minimumDateTime">
+    <datetime>
+     <hour>16</hour>
+     <minute>47</minute>
+     <second>0</second>
+     <year>2000</year>
+     <month>1</month>
+     <day>1</day>
+    </datetime>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+   <property name="date">
+    <date>
+     <year>2023</year>
+     <month>9</month>
+     <day>4</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="DepositAmountTotal">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>444</y>
+     <width>377</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+  border: 1px solid gray;
+}</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="dateEditTakeDown">
+   <property name="geometry">
+    <rect>
+     <x>194</x>
+     <y>258</y>
+     <width>93</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximumDate">
+    <date>
+     <year>2101</year>
+     <month>1</month>
+     <day>5</day>
+    </date>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>2000</year>
+     <month>1</month>
+     <day>1</day>
+    </date>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+   <property name="date">
+    <date>
+     <year>2023</year>
+     <month>9</month>
+     <day>4</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelInterstRate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>134</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Interest Rate</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Capitalisation">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>72</y>
+     <width>377</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QCheckBox {
+  background-color: rgb(155, 181, 137);
+  color: white; 
+  border: 1px solid gray;
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>Capitalisation</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="dropAmount">
+   <property name="geometry">
+    <rect>
+     <x>76</x>
+     <y>258</y>
+     <width>117</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::NoButtons</enum>
+   </property>
+   <property name="maximum">
+    <double>999999999999999.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLabel" name="tax">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>320</y>
+     <width>377</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  background-color: rgb(255, 201, 157);
+  color: white; 
+  border: 1px solid gray;
+}</string>
+   </property>
+   <property name="text">
+    <string>  Tax</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="takeDownPeriod">
+   <property name="geometry">
+    <rect>
+     <x>288</x>
+     <y>258</y>
+     <width>93</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+  border: 1px solid gray;
+}</string>
+   </property>
+   <item>
+    <property name="text">
+     <string>One-time</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Month</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Two Months</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Quoter</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Two Quoters</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Per Year</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QTextEdit" name="TaxSumm">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>320</y>
+     <width>377</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+  border: 1px solid gray;
+}</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
