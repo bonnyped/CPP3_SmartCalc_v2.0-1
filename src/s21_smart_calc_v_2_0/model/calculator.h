@@ -1,7 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_CALCULATOR_H_
-#define SRC_CALCULATOR_H_
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_CALCULATOR_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_CALCULATOR_H_
 
 #include <cmath>
 #include <functional>
@@ -18,16 +18,16 @@ class Calculator {
   using cvalue_type = const double;
   using stack_type = std::stack<value_type>;
   using cvector_reference = const std::vector<s21::Token> &;
-  double applyAction(cvalue_type left_operand,
-                     cvalue_type right_operand,
+  double applyAction(cvalue_type left_operand, cvalue_type right_operand,
                      clexeme_reference operation);
+
  public:
   Calculator() : calc_result_{} {}
   cvalue_type calculate(cvector_reference input, cvalue_type x_value);
 
-  private:
+ private:
   stack_type calc_result_;
 };
 }  // namespace s21
 
-#endif  // SRC_CALCULATOR_H_
+#endif  // SRC_S21_SMART_CALC_V_2_0_MODEL_CALCULATOR_H_

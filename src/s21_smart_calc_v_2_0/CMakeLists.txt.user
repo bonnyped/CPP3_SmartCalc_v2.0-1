@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 11.0.2, 2024-03-14T01:46:13. -->
+<!-- Written by QtCreator 11.0.2, 2024-03-15T03:33:16. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -107,7 +107,6 @@
 -DCMAKE_C_COMPILER:FILEPATH=%{Compiler:Executable:C}
 -DCMAKE_CXX_COMPILER:FILEPATH=%{Compiler:Executable:Cxx}
 -DCMAKE_CXX_FLAGS_INIT:STRING=%{Qt:QML_DEBUG_FLAG}</value>
-    <value type="int" key="EnableQmlDebugging">0</value>
     <value type="QString" key="ProjectExplorer.BuildConfiguration.BuildDirectory">/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/build-s21_smart_calc_v_2_0-Qt_6_2_4_qt6-Debug</value>
     <valuemap type="QVariantMap" key="ProjectExplorer.BuildConfiguration.BuildStepList.0">
      <valuemap type="QVariantMap" key="ProjectExplorer.BuildStepList.Step.0">

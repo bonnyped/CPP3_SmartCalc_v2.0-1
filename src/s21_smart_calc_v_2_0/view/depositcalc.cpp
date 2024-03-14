@@ -1,3 +1,5 @@
+// "Copyright [2024] <bonnyped, tg: @ltybcrf>"
+
 #include "depositcalc.h"
 #include "./ui_depositcalc.h"
 

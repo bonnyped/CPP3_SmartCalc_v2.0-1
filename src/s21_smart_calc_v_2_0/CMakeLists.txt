@@ -28,9 +28,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         view/qcustomplot/qcustomplot.cc view/qcustomplot/qcustomplot.h
-        controller/controller_credit.h controller/controller_deposit.h controller/controller_smart_calc.h
+        controller/credit.h controller/deposit.h controller/smart_calc.h
         model/calculator.cc model/calculator.h model/converter.cc model/converter.h model/coocker.cc model/coocker.h model/model.cc model/model.h model/parser.cc model/parser.h model/token.h model/validator.cc model/validator.h
-        controller/controller_smart_calc.cc
+        controller/smart_calc.cc
+        model/credit.cc model/credit.h
+        controller/credit.cc
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET s21smc APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

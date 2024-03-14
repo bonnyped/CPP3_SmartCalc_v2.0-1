@@ -187,29 +187,53 @@ s21smc_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc_autogen.dir/build.make CMakeFiles/s21smc_autogen.dir/build
 .PHONY : s21smc_autogen/fast
 
-controller/controller_smart_calc.o: controller/controller_smart_calc.cc.o
-.PHONY : controller/controller_smart_calc.o
+controller/credit.o: controller/credit.cc.o
+.PHONY : controller/credit.o
 
 # target to build an object file
-controller/controller_smart_calc.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o
-.PHONY : controller/controller_smart_calc.cc.o
+controller/credit.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/credit.cc.o
+.PHONY : controller/credit.cc.o
 
-controller/controller_smart_calc.i: controller/controller_smart_calc.cc.i
-.PHONY : controller/controller_smart_calc.i
+controller/credit.i: controller/credit.cc.i
+.PHONY : controller/credit.i
 
 # target to preprocess a source file
-controller/controller_smart_calc.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.i
-.PHONY : controller/controller_smart_calc.cc.i
+controller/credit.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/credit.cc.i
+.PHONY : controller/credit.cc.i
 
-controller/controller_smart_calc.s: controller/controller_smart_calc.cc.s
-.PHONY : controller/controller_smart_calc.s
+controller/credit.s: controller/credit.cc.s
+.PHONY : controller/credit.s
 
 # target to generate assembly for a file
-controller/controller_smart_calc.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.s
-.PHONY : controller/controller_smart_calc.cc.s
+controller/credit.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/credit.cc.s
+.PHONY : controller/credit.cc.s
+
+controller/smart_calc.o: controller/smart_calc.cc.o
+.PHONY : controller/smart_calc.o
+
+# target to build an object file
+controller/smart_calc.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/smart_calc.cc.o
+.PHONY : controller/smart_calc.cc.o
+
+controller/smart_calc.i: controller/smart_calc.cc.i
+.PHONY : controller/smart_calc.i
+
+# target to preprocess a source file
+controller/smart_calc.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/smart_calc.cc.i
+.PHONY : controller/smart_calc.cc.i
+
+controller/smart_calc.s: controller/smart_calc.cc.s
+.PHONY : controller/smart_calc.s
+
+# target to generate assembly for a file
+controller/smart_calc.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/controller/smart_calc.cc.s
+.PHONY : controller/smart_calc.cc.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -306,6 +330,30 @@ model/coocker.s: model/coocker.cc.s
 model/coocker.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/model/coocker.cc.s
 .PHONY : model/coocker.cc.s
+
+model/credit.o: model/credit.cc.o
+.PHONY : model/credit.o
+
+# target to build an object file
+model/credit.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/model/credit.cc.o
+.PHONY : model/credit.cc.o
+
+model/credit.i: model/credit.cc.i
+.PHONY : model/credit.i
+
+# target to preprocess a source file
+model/credit.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/model/credit.cc.i
+.PHONY : model/credit.cc.i
+
+model/credit.s: model/credit.cc.s
+.PHONY : model/credit.s
+
+# target to generate assembly for a file
+model/credit.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/s21smc.dir/build.make CMakeFiles/s21smc.dir/model/credit.cc.s
+.PHONY : model/credit.cc.s
 
 model/model.o: model/model.cc.o
 .PHONY : model/model.o
@@ -537,9 +585,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... s21smc_autogen"
 	@echo "... s21smc"
-	@echo "... controller/controller_smart_calc.o"
-	@echo "... controller/controller_smart_calc.i"
-	@echo "... controller/controller_smart_calc.s"
+	@echo "... controller/credit.o"
+	@echo "... controller/credit.i"
+	@echo "... controller/credit.s"
+	@echo "... controller/smart_calc.o"
+	@echo "... controller/smart_calc.i"
+	@echo "... controller/smart_calc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -552,6 +603,9 @@ help:
 	@echo "... model/coocker.o"
 	@echo "... model/coocker.i"
 	@echo "... model/coocker.s"
+	@echo "... model/credit.o"
+	@echo "... model/credit.i"
+	@echo "... model/credit.s"
 	@echo "... model/model.o"
 	@echo "... model/model.i"
 	@echo "... model/model.s"

@@ -1,7 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_VALIDATOR_H_
-#define SRC_VALIDATOR_H_
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_VALIDATOR_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_VALIDATOR_H_
 
 #include <map>
 #include <stdexcept>
@@ -24,7 +24,7 @@ class Validator {
   void checkSequence(cvector_reference input);
   vector_type getValidatedVector() { return output_; }
 
-  private:
+ private:
   std::map<EntityType, std::vector<bool>> validatorMap_ = {
       {EntityType::first_sybol_in_string,
        {true, true, false, true, true, false, true, false}},
@@ -52,4 +52,4 @@ class Validator {
 };
 }  // namespace s21
 
-#endif  // SRC_VALIDATOR_H_
+#endif  // SRC_S21_SMART_CALC_V_2_0_MODEL_VALIDATOR_H_

@@ -1,7 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_CONVERTER_H_
-#define SRC_CONVERTER_H_
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_CONVERTER_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_CONVERTER_H_
 
 #include <stack>
 #include <stdexcept>
@@ -38,11 +38,11 @@ class Converter {
   vector_reference getRpn() { return ReversePolishNotation_; }
   cvector_reference convertedResultForTest(cstring_reference input);
 
-  private:
+ private:
   vector_type ReversePolishNotation_;
   vector_type forTesting_;
   stack_type Stack_;
 };
 }  // namespace s21
 
-#endif  // SRC_CONVERTER_H_
+#endif  // SRC_S21_SMART_CALC_V_2_0_MODEL_CONVERTER_H_

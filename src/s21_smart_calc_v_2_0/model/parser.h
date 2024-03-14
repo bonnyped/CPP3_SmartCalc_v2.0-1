@@ -1,7 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_PARSER_H_
-#define SRC_PARSER_H_
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_PARSER_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_PARSER_H_
 
 #include <string>
 #include <utility>
@@ -29,9 +29,9 @@ class Parser {
   explicit Parser(cstring_reference input) { convertToPreRpn(input); }
   vector_reference getPreRpn() { return PreRpn_; }
 
-  private:
+ private:
   vector_type PreRpn_;
 };
 }  // namespace s21
 
-#endif  //  SRC_PARSER_H_
+#endif  //  SRC_S21_SMART_CALC_V_2_0_MODEL_PARSER_H_

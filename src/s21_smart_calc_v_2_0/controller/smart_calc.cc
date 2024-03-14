@@ -1,4 +1,4 @@
-#include "controller_smart_calc.h"
+#include "smart_calc.h"
 
 namespace s21{
 double ControllerSmartCalc::getResult() {
@@ -19,5 +19,4 @@ void ControllerSmartCalc::getResultForGraph(){
         y_ = model.getY();
     }
 }
-
 }

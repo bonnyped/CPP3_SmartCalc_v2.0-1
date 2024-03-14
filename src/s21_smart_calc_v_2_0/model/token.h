@@ -1,7 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_TOKEN_H_
-#define SRC_TOKEN_H_
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_TOKEN_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_TOKEN_H_
 
 #include <map>
 
@@ -51,7 +51,7 @@ class Token {
   cpriority_reference getPriority() const { return priority_; }
   Associativity getAssocitivity() const { return associativity_; }
 
-  private:
+ private:
   EntityType entity_{};
   number_type number_{};
   lexeme_type lexeme_{};
@@ -67,7 +67,7 @@ class FillTokenMap {
  public:
   cmap_reference getMap() { return map_; }
 
-  private:
+ private:
   map_type map_{
       {{0, {EntityType::bad, 0, 35, Priority::bad_symbol, Associativity::left}},
        {1, {EntityType::numeric, 0, 0, Priority::push, Associativity::left}},
@@ -110,8 +110,7 @@ class FillTokenMap {
         {EntityType::closeBracket, 0, ')', Priority::higest,
          Associativity::left}},
        {'x', {EntityType::xNum, 0, 'x', Priority::push, Associativity::left}}}};
-
 };
-} // namespace s21
+}  // namespace s21
 
-#endif  // SRC_TOKEN_H_
+#endif  // SRC_S21_SMART_CALC_V_2_0_MODEL_TOKEN_H_

@@ -1,7 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_MODEL_H_
-#define SRC_MODEL_H_
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_
 
 #include <algorithm>
 #include <cctype>
@@ -32,34 +32,39 @@ using cvector_reference = const vector_type &;
 using vector_token_type = std::vector<s21::Token>;
 using cvector_token_type = const vector_token_type &;
 
-
 class Model {
-private:
-    using value_type = double;
-    using cvalue_type = const value_type;
+ private:
+  using value_type = double;
+  using cvalue_type = const value_type;
 
  public:
-     using reference = Model &;
-     using string_type = std::string;
-     using cstring_reference = const std::string &;
-     Model() {}
-     Model(cstring_reference input, cvalue_type x_value) : result_(), inputed_string_(input), x_value_(x_value), x_{}, y_{}, reverse_polish_notation_{} {}
-     void determReversePolishNitation();
-     cnumber_number_type getResultForControllerOrGraph();
-     string_type getInputedString() {return inputed_string_;}
-     value_type getXValue() {return x_value_;}
-     cvector_token_type getReversePolishNitation();
-     void fillVectorsForGraph();
-     cvector_reference getX() {return x_;}
-     cvector_reference getY() {return y_;}
+  using reference = Model &;
+  using string_type = std::string;
+  using cstring_reference = const std::string &;
+  Model() {}
+  Model(cstring_reference input, cvalue_type x_value)
+      : result_(),
+        inputed_string_(input),
+        x_value_(x_value),
+        x_{},
+        y_{},
+        reverse_polish_notation_{} {}
+  void determReversePolishNitation();
+  cnumber_number_type getResultForControllerOrGraph();
+  string_type getInputedString() { return inputed_string_; }
+  value_type getXValue() { return x_value_; }
+  cvector_token_type getReversePolishNitation();
+  void fillVectorsForGraph();
+  cvector_reference getX() { return x_; }
+  cvector_reference getY() { return y_; }
 
-  private:
-     value_type result_;
-     string_type inputed_string_{};
-     value_type x_value_;
-     vector_type x_;
-     vector_type y_;
-     vector_token_type reverse_polish_notation_;
+ private:
+  value_type result_;
+  string_type inputed_string_{};
+  value_type x_value_;
+  vector_type x_;
+  vector_type y_;
+  vector_token_type reverse_polish_notation_;
 };
-}
-#endif  // SRC_MODEL_H_
+}  // namespace s21
+#endif  // SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_

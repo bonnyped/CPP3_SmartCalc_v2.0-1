@@ -1,14 +1,10 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_CREDIT_H_
-#define SRC_CREDIT_H_
-
-#include <ostream>
-
-#include "model.h"
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_CREDIT_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_CREDIT_H_
 
 namespace s21 {
-  
+
 struct Input {
   double total_loan_amount_;
   int term_;
@@ -22,10 +18,12 @@ struct Output {
   double total_payment_;
 };
 
-class AnnгityCreditCalc {
+class AnnuityCreditCalc {
  public:
-  explicit AnnгityCreditCalc(const Input &input) : output_{} { input_ = input; }
+  AnnuityCreditCalc() {}
+  explicit AnnuityCreditCalc(const Input &input) : output_{} { input_ = input; }
   void calcCreditData();
+  const Output &getOutput() { return output_; }
 
  private:
   Input input_;
@@ -38,8 +36,8 @@ class VariedCreditCalc {
 
  public:
   explicit VariedCreditCalc(const Input &input) : output_{} { input_ = input; }
-
   void calcCreditData();
+  const Output &getOutput() { return output_; }
 
  private:
   Input input_;
@@ -47,4 +45,4 @@ class VariedCreditCalc {
 };
 }  // namespace s21
 
-#endif  //  SRC_CREDIT_H_
+#endif  //  SRC_S21_SMART_CALC_V_2_0_MODEL_CREDIT_H_

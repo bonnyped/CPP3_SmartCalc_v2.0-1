@@ -1,7 +1,7 @@
 // // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
 #include "model.h"
-#include "../controller/controller_smart_calc.h"
+#include "../controller/smart_calc.h"
 
 namespace s21{
 
@@ -48,5 +48,4 @@ void Model::fillVectorsForGraph(){
 
     }
 }
-
 }

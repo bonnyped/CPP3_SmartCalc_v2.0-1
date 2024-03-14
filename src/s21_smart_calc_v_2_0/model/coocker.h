@@ -1,7 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#ifndef SRC_COOCKER_H_
-#define SRC_COOCKER_H_
+#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_COOCKER_H_
+#define SRC_S21_SMART_CALC_V_2_0_MODEL_COOCKER_H_
 
 #include <map>
 #include <string>
@@ -32,15 +32,14 @@ class entitesMap {
   using map_type = std::map<value_type, value_type>;
   using map_reference = map_type &;
 
-
  public:
-   map_reference getMap() { return map_; }
+  map_reference getMap() { return map_; }
 
  private:
-   map_type map_{{"acos", "a"}, {"asin", "i"}, {"atan", "n"}, {"cos", "c"},
-                 {"ln", "l"},   {"log", "g"},  {"mod", "%"},  {"sin", "s"},
-                 {"sqrt", "q"}, {"tan", "t"}};
+  map_type map_{{"acos", "a"}, {"asin", "i"}, {"atan", "n"}, {"cos", "c"},
+                {"ln", "l"},   {"log", "g"},  {"mod", "%"},  {"sin", "s"},
+                {"sqrt", "q"}, {"tan", "t"}};
 };
 }  // namespace s21
 
-#endif  //  SRC_COOCKER_H_
+#endif  //  SRC_S21_SMART_CALC_V_2_0_MODEL_COOCKER_H_

@@ -330,21 +330,21 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/controller_credit.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.h",
 			"MU",
-			"NPUKSKGWT2/moc_controller_credit.cpp",
+			"NPUKSKGWT2/moc_credit.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/controller_deposit.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/deposit.h",
 			"MU",
-			"NPUKSKGWT2/moc_controller_deposit.cpp",
+			"NPUKSKGWT2/moc_deposit.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/controller_smart_calc.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.h",
 			"MU",
-			"NPUKSKGWT2/moc_controller_smart_calc.cpp",
+			"NPUKSKGWT2/moc_smart_calc.cpp",
 			null
 		],
 		[
@@ -363,6 +363,12 @@
 			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/coocker.h",
 			"MU",
 			"NLOY5YBGEN/moc_coocker.cpp",
+			null
+		],
+		[
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.h",
+			"MU",
+			"NLOY5YBGEN/moc_credit.cpp",
 			null
 		],
 		[
@@ -471,7 +477,12 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/controller_smart_calc.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.cc",
+			"MU",
+			null
+		],
+		[
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.cc",
 			"MU",
 			null
 		],
@@ -492,6 +503,11 @@
 		],
 		[
 			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/coocker.cc",
+			"MU",
+			null
+		],
+		[
+			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.cc",
 			"MU",
 			null
 		],

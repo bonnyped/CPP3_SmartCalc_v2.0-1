@@ -251,19 +251,47 @@ CMakeFiles/s21smc.dir/model/validator.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/s21smc.dir/model/validator.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/validator.cc -o CMakeFiles/s21smc.dir/model/validator.cc.s
 
-CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o: CMakeFiles/s21smc.dir/flags.make
-CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o: controller/controller_smart_calc.cc
-CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o: CMakeFiles/s21smc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o -MF CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o.d -o CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o -c /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/controller_smart_calc.cc
+CMakeFiles/s21smc.dir/controller/smart_calc.cc.o: CMakeFiles/s21smc.dir/flags.make
+CMakeFiles/s21smc.dir/controller/smart_calc.cc.o: controller/smart_calc.cc
+CMakeFiles/s21smc.dir/controller/smart_calc.cc.o: CMakeFiles/s21smc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/s21smc.dir/controller/smart_calc.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21smc.dir/controller/smart_calc.cc.o -MF CMakeFiles/s21smc.dir/controller/smart_calc.cc.o.d -o CMakeFiles/s21smc.dir/controller/smart_calc.cc.o -c /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.cc
 
-CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/controller_smart_calc.cc > CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.i
+CMakeFiles/s21smc.dir/controller/smart_calc.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/s21smc.dir/controller/smart_calc.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.cc > CMakeFiles/s21smc.dir/controller/smart_calc.cc.i
 
-CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/controller_smart_calc.cc -o CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.s
+CMakeFiles/s21smc.dir/controller/smart_calc.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/s21smc.dir/controller/smart_calc.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.cc -o CMakeFiles/s21smc.dir/controller/smart_calc.cc.s
+
+CMakeFiles/s21smc.dir/model/credit.cc.o: CMakeFiles/s21smc.dir/flags.make
+CMakeFiles/s21smc.dir/model/credit.cc.o: model/credit.cc
+CMakeFiles/s21smc.dir/model/credit.cc.o: CMakeFiles/s21smc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/s21smc.dir/model/credit.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21smc.dir/model/credit.cc.o -MF CMakeFiles/s21smc.dir/model/credit.cc.o.d -o CMakeFiles/s21smc.dir/model/credit.cc.o -c /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.cc
+
+CMakeFiles/s21smc.dir/model/credit.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/s21smc.dir/model/credit.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.cc > CMakeFiles/s21smc.dir/model/credit.cc.i
+
+CMakeFiles/s21smc.dir/model/credit.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/s21smc.dir/model/credit.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.cc -o CMakeFiles/s21smc.dir/model/credit.cc.s
+
+CMakeFiles/s21smc.dir/controller/credit.cc.o: CMakeFiles/s21smc.dir/flags.make
+CMakeFiles/s21smc.dir/controller/credit.cc.o: controller/credit.cc
+CMakeFiles/s21smc.dir/controller/credit.cc.o: CMakeFiles/s21smc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/s21smc.dir/controller/credit.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/s21smc.dir/controller/credit.cc.o -MF CMakeFiles/s21smc.dir/controller/credit.cc.o.d -o CMakeFiles/s21smc.dir/controller/credit.cc.o -c /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.cc
+
+CMakeFiles/s21smc.dir/controller/credit.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/s21smc.dir/controller/credit.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.cc > CMakeFiles/s21smc.dir/controller/credit.cc.i
+
+CMakeFiles/s21smc.dir/controller/credit.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/s21smc.dir/controller/credit.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.cc -o CMakeFiles/s21smc.dir/controller/credit.cc.s
 
 # Object files for target s21smc
 s21smc_OBJECTS = \
@@ -280,7 +308,9 @@ s21smc_OBJECTS = \
 "CMakeFiles/s21smc.dir/model/model.cc.o" \
 "CMakeFiles/s21smc.dir/model/parser.cc.o" \
 "CMakeFiles/s21smc.dir/model/validator.cc.o" \
-"CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o"
+"CMakeFiles/s21smc.dir/controller/smart_calc.cc.o" \
+"CMakeFiles/s21smc.dir/model/credit.cc.o" \
+"CMakeFiles/s21smc.dir/controller/credit.cc.o"
 
 # External object files for target s21smc
 s21smc_EXTERNAL_OBJECTS =
@@ -298,7 +328,9 @@ s21smc: CMakeFiles/s21smc.dir/model/coocker.cc.o
 s21smc: CMakeFiles/s21smc.dir/model/model.cc.o
 s21smc: CMakeFiles/s21smc.dir/model/parser.cc.o
 s21smc: CMakeFiles/s21smc.dir/model/validator.cc.o
-s21smc: CMakeFiles/s21smc.dir/controller/controller_smart_calc.cc.o
+s21smc: CMakeFiles/s21smc.dir/controller/smart_calc.cc.o
+s21smc: CMakeFiles/s21smc.dir/model/credit.cc.o
+s21smc: CMakeFiles/s21smc.dir/controller/credit.cc.o
 s21smc: CMakeFiles/s21smc.dir/build.make
 s21smc: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4
 s21smc: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4
@@ -306,7 +338,7 @@ s21smc: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4
 s21smc: /usr/lib/x86_64-linux-gnu/libGLX.so
 s21smc: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 s21smc: CMakeFiles/s21smc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable s21smc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable s21smc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/s21smc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

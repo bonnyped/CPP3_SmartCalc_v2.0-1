@@ -164,41 +164,6 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QComboBox" name="comboBoxTypeOfFTermCredit">
-   <property name="geometry">
-    <rect>
-     <x>226</x>
-     <y>72</y>
-     <width>175</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>12</pointsize>
-     <italic>false</italic>
-     <bold>true</bold>
-     <underline>false</underline>
-     <strikeout>false</strikeout>
-     <kerning>false</kerning>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QComboBox {
-  border: 1px solid gray;
-}</string>
-   </property>
-   <item>
-    <property name="text">
-     <string>Months</string>
-    </property>
-   </item>
-   <item>
-    <property name="text">
-     <string>Years</string>
-    </property>
-   </item>
-  </widget>
   <widget class="QLineEdit" name="lineEditMonthlyPaymentResult">
    <property name="geometry">
     <rect>
@@ -364,7 +329,7 @@ background-color: rgb(155, 181, 137);
     <rect>
      <x>50</x>
      <y>72</y>
-     <width>175</width>
+     <width>351</width>
      <height>61</height>
     </rect>
    </property>
@@ -448,6 +413,17 @@ background-color: rgb(155, 181, 137);
    </property>
   </widget>
  </widget>
+ <tabstops>
+  <tabstop>doubleSpinLoanBody</tabstop>
+  <tabstop>spinBoxTermCredit</tabstop>
+  <tabstop>doubleSpinInterestCredit</tabstop>
+  <tabstop>lineEditMonthlyPaymentResult</tabstop>
+  <tabstop>lineEditOverpayResult</tabstop>
+  <tabstop>lineEditTotalPaymentResult</tabstop>
+  <tabstop>radioButtonAnnuitete</tabstop>
+  <tabstop>radioButtonDifferential</tabstop>
+  <tabstop>CalcCredit</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>

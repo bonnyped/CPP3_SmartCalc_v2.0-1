@@ -1,9 +1,11 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "credit.h"
+#include "../model/credit.h"
+
+#include <cmath>
 
 namespace s21 {
-void AnnгityCreditCalc::calcCreditData() {
+void AnnuityCreditCalc::calcCreditData() {
   double monthly_rate = input_.rate_of_interest_ / 12 / 100;
   double annuity_rate_ = monthly_rate *
                          std::pow(1 + monthly_rate, input_.term_) /
