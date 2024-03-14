@@ -1,6 +1,7 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
 #include "coocker.h"
+
 #include <functional>
 
 void s21::Coocker::removeWhitespaces() {

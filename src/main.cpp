@@ -1,6 +1,6 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/model.h"
+#include "./s21_smart_calc_v_2_0/model/model.h"
 
 using namespace s21;
 using namespace std;

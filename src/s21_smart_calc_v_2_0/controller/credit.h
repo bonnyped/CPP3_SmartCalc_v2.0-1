@@ -10,7 +10,8 @@ namespace s21 {
 class ControllerAnnuityCalc {
  public:
   ControllerAnnuityCalc() {}
-  explicit ControllerAnnuityCalc(const Input &input) : from_view_(input), from_model_{} {}
+  explicit ControllerAnnuityCalc(const Input &input)
+      : from_view_(input), from_model_{} {}
   void calcResultInModel();
   const Output &getOutput() { return from_model_; }
 
@@ -22,7 +23,8 @@ class ControllerAnnuityCalc {
 class ControllerVariedCalc {
  public:
   ControllerVariedCalc() {}
-  explicit ControllerVariedCalc(const Input &input) : from_view_(input), from_model_{} {}
+  explicit ControllerVariedCalc(const Input &input)
+      : from_view_(input), from_model_{} {}
   void calcResultInModel();
   const Output &getOutput() { return from_model_; }
 

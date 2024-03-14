@@ -1,15 +1,15 @@
 {
-	"BUILD_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen",
-	"CMAKE_BINARY_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
+	"BUILD_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen",
+	"CMAKE_BINARY_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeLists.txt",
-		"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/3.22.1/CMakeSystem.cmake",
+		"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeLists.txt",
+		"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/3.22.1/CMakeSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
+		"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake",
@@ -324,111 +324,111 @@
 		"/usr/share/cmake-3.22/Modules/FindPackageMessage.cmake",
 		"/usr/share/cmake-3.22/Modules/GNUInstallDirs.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
+	"CMAKE_SOURCE_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.h",
 			"MU",
 			"NPUKSKGWT2/moc_credit.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/deposit.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/deposit.h",
 			"MU",
 			"NPUKSKGWT2/moc_deposit.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.h",
 			"MU",
 			"NPUKSKGWT2/moc_smart_calc.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/calculator.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/calculator.h",
 			"MU",
 			"NLOY5YBGEN/moc_calculator.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/converter.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/converter.h",
 			"MU",
 			"NLOY5YBGEN/moc_converter.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/coocker.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/coocker.h",
 			"MU",
 			"NLOY5YBGEN/moc_coocker.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.h",
 			"MU",
 			"NLOY5YBGEN/moc_credit.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/model.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/model.h",
 			"MU",
 			"NLOY5YBGEN/moc_model.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/parser.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/parser.h",
 			"MU",
 			"NLOY5YBGEN/moc_parser.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/token.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/token.h",
 			"MU",
 			"NLOY5YBGEN/moc_token.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/validator.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/validator.h",
 			"MU",
 			"NLOY5YBGEN/moc_validator.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/creditcalc.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/creditcalc.h",
 			"MU",
 			"OTUN7GXZT4/moc_creditcalc.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/depositcalc.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/depositcalc.h",
 			"MU",
 			"OTUN7GXZT4/moc_depositcalc.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/mainwindow.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/mainwindow.h",
 			"MU",
 			"OTUN7GXZT4/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/qcustomplot/qcustomplot.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/qcustomplot/qcustomplot.h",
 			"MU",
 			"LNTGOHXIOS/moc_qcustomplot.cpp",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/smartcalc.h",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/smartcalc.h",
 			"MU",
 			"OTUN7GXZT4/moc_smartcalc.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -463,91 +463,91 @@
 		"-c",
 		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 10,
-	"PARSE_CACHE_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 2,
-	"SETTINGS_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/credit.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/controller/smart_calc.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/main.cpp",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/main.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/calculator.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/calculator.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/converter.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/converter.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/coocker.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/coocker.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/credit.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/model.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/model.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/parser.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/parser.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/validator.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/model/validator.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/creditcalc.cpp",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/creditcalc.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/depositcalc.cpp",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/depositcalc.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/mainwindow.cpp",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/mainwindow.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/qcustomplot/qcustomplot.cc",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/qcustomplot/qcustomplot.cc",
 			"MU",
 			null
 		],
 		[
-			"/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/smartcalc.cpp",
+			"/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/view/smartcalc.cpp",
 			"MU",
 			null
 		]

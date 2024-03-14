@@ -13,14 +13,17 @@
 #include "calculator.h"
 #include "converter.h"
 #include "coocker.h"
+#include "credit.h"
+#include "parser.h"
+#include "token.h"
 #include "validator.h"
 
 namespace s21 {
 using size_type = std::size_t;
 using csize_type = const size_type;
-using number_type = double;
-using number_reference = number_type &;
-using cnumber_number_type = const number_type;
+using value_type = double;
+using number_reference = value_type &;
+using cvalue_type = const value_type;
 using lexeme_type = char;
 using lexeme_reference = lexeme_type &;
 using clexeme_reference = const lexeme_type &;
@@ -50,7 +53,7 @@ class Model {
         y_{},
         reverse_polish_notation_{} {}
   void determReversePolishNitation();
-  cnumber_number_type getResultForControllerOrGraph();
+  value_type getResultForControllerOrGraph();
   string_type getInputedString() { return inputed_string_; }
   value_type getXValue() { return x_value_; }
   cvector_token_type getReversePolishNitation();

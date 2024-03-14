@@ -23,7 +23,7 @@ class Calculator {
 
  public:
   Calculator() : calc_result_{} {}
-  cvalue_type calculate(cvector_reference input, cvalue_type x_value);
+  double calculate(cvector_reference input, cvalue_type x_value);
 
  private:
   stack_type calc_result_;

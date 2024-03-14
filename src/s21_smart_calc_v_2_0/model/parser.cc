@@ -12,21 +12,18 @@ EntityType Parser::determEntity(const char &currentChar) {
   return entity;
 }
 
-Parser::vector_reference Parser::convertToPreRpn(cstring_reference input)
-{
-      FillTokenMap map{};
-      for (size_type index = 0; index < input.size(); ++index) {
-        char currentChar = input[index];
-        Token currentToken = getToken(currentChar, map.getMap());
-        if (determEntity(currentChar) == EntityType::numeric || currentChar == '.')
-            index = pushNumber(&input[index], index, map.getMap());
-        else
-            getPreRpn().push_back(currentToken);
-      }
-      return getPreRpn();
+Parser::vector_reference Parser::convertToPreRpn(cstring_reference input) {
+  FillTokenMap map{};
+  for (size_type index = 0; index < input.size(); ++index) {
+    char currentChar = input[index];
+    Token currentToken = getToken(currentChar, map.getMap());
+    if (determEntity(currentChar) == EntityType::numeric || currentChar == '.')
+      index = pushNumber(&input[index], index, map.getMap());
+    else
+      getPreRpn().push_back(currentToken);
+  }
+  return getPreRpn();
 }
-
-
 
 size_type Parser::pushNumber(cstring_reference str, csize_type index,
                              cmap_reference map) {

@@ -3,8 +3,7 @@
 #include "calculator.h"
 
 namespace s21 {
-Calculator::cvalue_type Calculator::calculate(
-    cvector_reference input, cvalue_type x_value) {
+double Calculator::calculate(cvector_reference input, cvalue_type x_value) {
   for (auto elem : input) {
     EntityType curr_elem = elem.getEntity();
     if (curr_elem == EntityType::numeric) {
@@ -19,7 +18,8 @@ Calculator::cvalue_type Calculator::calculate(
       calc_result_.push(x_value);
     } else if (curr_elem == EntityType::functions ||
                curr_elem == EntityType::unary_minus) {
-      calc_result_.top() = applyAction(0.0, calc_result_.top(), elem.getLexeme());
+      calc_result_.top() =
+          applyAction(0.0, calc_result_.top(), elem.getLexeme());
     }
   }
   return calc_result_.top();
@@ -74,7 +74,8 @@ Calculator::value_type Calculator::applyAction(cvalue_type left_operand,
       result = std::sqrt(right_operand);
       break;
     case 't':
-      result = std::tan(right_operand); // неправильный график получается как будто
+      result =
+          std::tan(right_operand);  // неправильный график получается как будто
       break;
     case '~':
       result = neg(right_operand);

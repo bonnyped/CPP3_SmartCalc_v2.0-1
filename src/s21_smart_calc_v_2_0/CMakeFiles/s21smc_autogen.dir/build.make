@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0
+CMAKE_SOURCE_DIR = /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0
+CMAKE_BINARY_DIR = /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0
 
 # Utility rule file for s21smc_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/s21smc_autogen.dir/compiler_depend.make
 include CMakeFiles/s21smc_autogen.dir/progress.make
 
 CMakeFiles/s21smc_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target s21smc"
-	/usr/bin/cmake -E cmake_autogen /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target s21smc"
+	/usr/bin/cmake -E cmake_autogen /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/AutogenInfo.json ""
 
 s21smc_autogen: CMakeFiles/s21smc_autogen
 s21smc_autogen: CMakeFiles/s21smc_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/s21smc_autogen.dir/clean:
 .PHONY : CMakeFiles/s21smc_autogen.dir/clean
 
 CMakeFiles/s21smc_autogen.dir/depend:
-	cd /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0 /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/CMakeFiles/s21smc_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/s21smc_autogen.dir/depend
 

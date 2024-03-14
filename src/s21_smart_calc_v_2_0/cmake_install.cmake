@@ -1,4 +1,4 @@
-# Install script for directory: /home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0
+# Install script for directory: /home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/s21smc"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/s21smc")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/s21smc" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/s21smc")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -66,5 +66,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/bonnypedubuntu/21-school.ru/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/s21_smart_calc_v_2_0/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

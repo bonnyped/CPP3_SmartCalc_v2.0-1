@@ -78,7 +78,11 @@ void SmartCalc::on_equalsButton_clicked() {
 void SmartCalc::on_BuildGraph_clicked() {
   getDataFromView();
   s21::ControllerSmartCalc controller(input_string_from_view_, x_);
-  controller.getResultForGraph();
+  try {
+    controller.getResultForGraph();
+  } catch (std::exception &ex) {
+    QMessageBox::critical(this, "error", ex.what());
+  }
   fillGraph(controller.getX(), controller.getY());
 }
 
