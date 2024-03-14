@@ -1124,7 +1124,7 @@ QPushButton:pressed {
          <number>1</number>
         </property>
         <property name="value">
-         <number>-10</number>
+         <number>-15</number>
         </property>
         <property name="displayIntegerBase">
          <number>10</number>
@@ -1147,7 +1147,7 @@ QPushButton:pressed {
          <number>1000000</number>
         </property>
         <property name="value">
-         <number>10</number>
+         <number>15</number>
         </property>
         <property name="displayIntegerBase">
          <number>10</number>
@@ -1194,7 +1194,10 @@ QPushButton:pressed {
          <number>-1</number>
         </property>
         <property name="value">
-         <number>-10</number>
+         <number>-15</number>
+        </property>
+        <property name="displayIntegerBase">
+         <number>10</number>
         </property>
        </widget>
       </item>
@@ -1214,7 +1217,7 @@ QPushButton:pressed {
          <number>1000000</number>
         </property>
         <property name="value">
-         <number>10</number>
+         <number>15</number>
         </property>
        </widget>
       </item>

@@ -99,6 +99,8 @@ void SmartCalc::fillGraph(const std::vector<double> &x,
   builded_graph_->clearGraphs();
   builded_graph_->xAxis->setRange(ui->minX->value(), ui->maxX->value());
   builded_graph_->yAxis->setRange(ui->minY->value(), ui->maxY->value());
+  builded_graph_->xAxis->setLabel("X");
+  builded_graph_->yAxis->setLabel("y");
   builded_graph_->addGraph();
   builded_graph_->graph(0)->setData(x_, y_);
   builded_graph_->replot();
@@ -135,6 +137,8 @@ void SmartCalc::makeGraph() {
   y.push_back(1);
   y.push_back(-4);
   y.push_back(-3);
+  builded_graph_->xAxis->setRange(ui->minX->value(), ui->maxX->value());
+  builded_graph_->yAxis->setRange(ui->minY->value(), ui->maxY->value());
   builded_graph_->addGraph();
 
   builded_graph_->graph(0)->setData(x, y);
