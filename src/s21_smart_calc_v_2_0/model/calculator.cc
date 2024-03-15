@@ -80,8 +80,6 @@ Calculator::value_type Calculator::applyAction(cvalue_type left_operand,
     case '~':
       result = neg(right_operand);
       break;
-    default:
-      break;
   }
   return result;
 }

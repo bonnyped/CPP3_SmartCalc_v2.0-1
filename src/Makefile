@@ -1,10 +1,13 @@
-CC = g++ -std=c++17 -g -pedantic
-CCFLAGS = -Wall -Werror -Wextra -fno-stack-protector
-TEST_FLAGS  =  -lgtest -pthread -std=c++17  -lstdc++ -lpthread -lm
-PREF_MODEL = "./s21_smart_calc_v_2_0/model/"
+CC 				= g++ -std=c++17 -g -pedantic
+CCFLAGS 		= -Wall -Werror -Wextra -fno-stack-protector
+TEST_FLAGS  	=  -lgtest -pthread -std=c++17  -lstdc++ -lpthread -lm
+GFLAGS      	= -fprofile-arcs -ftest-coverage
+PREF_MODEL 		= "./s21_smart_calc_v_2_0/model/"
 PREF_CONTROLLER = "./s21_smart_calc_v_2_0/controller/"
-PREF_VIEW = "./s21_smart_calc_v_2_0/view/"
-PREF_TEST = "./tests/"
+PREF_VIEW		= "./s21_smart_calc_v_2_0/view/"
+PREF_TEST 		= "tests/"
+OS         		=  $(shell uname -s)
+
 
 all: clang compile  
 
@@ -13,15 +16,39 @@ clang:
 
 compile:
 	$(CC) main.cpp $(PREF_MODEL)*.cc $(CCFLAGS)
-	
-run:	
 	./a.out
 
-test:
-	rm -rf ./tests/test
-	$(CC) -o ./tests/test $(CCFLAGS) ./tests/*.cc $(PREF_MODEL)*.cc $(TEST_FLAGS)
-	./tests/test
-	# make lcov
+install:
+
+uninstall:
+
+dvi:
+	sudo apt install texinfo
+	makeinfo файл
+
+dist:
+
+tests: clean
+	$(CC) -o $(PREF_TEST)test $(CCFLAGS) $(PREF_TEST)*.cc $(PREF_MODEL)*.cc $(PREF_CONTROLLER)*.cc $(TEST_FLAGS)
+	$(PREF_TEST)test
+
+gcov: 
+	$(CC) -o $(PREF_TEST)test $(PREF_TEST)*.cc $(PREF_MODEL)*.cc $(PREF_CONTROLLER)*.cc $(TEST_FLAGS) $(GFLAGS)
+	$(PREF_TEST)test
+
+
+lcov: gcov
+	lcov --quiet --no-recursion --capture --directory $(PREF_TEST) --output-file $(PREF_TEST)test.info
+	@lcov --quiet --no-recursion -r $(PREF_TEST)test.info '/usr/*' '*/v1/*' '*/tests/*' '*/s21_smart_calc_v_2_0/controller/*' --output-file $(PREF_TEST)test.info
+	genhtml -o ./report/ $(PREF_TEST)test.info
+	@rm -f $(PREF_TEST)*.gcda  $(PREF_TEST)*.gcno
+	@rm -f $(PREF_TEST)test.info
+ifeq ($(OS),Linux) 
+	xdg-open report/index.html
+else
+	open -a "Google Chrome" report/index.html
+endif
+	@rm -rf ./report $(PREF_TEST)test
 
 clean:
-	rm -rf ./a.out ./tests/test
+	rm -rf ./a.out $(PREF_TEST)test  

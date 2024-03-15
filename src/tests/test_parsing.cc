@@ -1,6 +1,6 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "./s21_test_smart_calc_cpp.h"
+#include "./test_smart_calc_cpp.h"
 
 TEST(parsing, test_1) {
   s21::Coocker input("()");

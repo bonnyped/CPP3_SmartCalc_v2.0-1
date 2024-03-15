@@ -6,10 +6,20 @@ using namespace s21;
 using namespace std;
 
 int main() {
-  VariedCreditCalc a({100000, 60, 15});
+  std::string input = "(1*(2+(3-(4/(5 ^ sin(11)))))-1    4";
+  Coocker a(input);
+  a.preparingStr();
+  Parser b(a.getStr());
+  Converter c;
 
-  a.calcCreditData();
-  // std::cout << c.getRpn().back().getEntity() << '\n';
+  for (auto elem : b.getPreRpn()) {
+    if (elem.getEntity() == EntityType::numeric)
+      std::cout << elem.getNumber();
+    else
+      std::cout << elem.getLexeme();
+  }
+  
+  std::cout << '\n';
 
   return 0;
 }

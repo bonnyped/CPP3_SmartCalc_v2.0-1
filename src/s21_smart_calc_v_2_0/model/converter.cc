@@ -58,6 +58,11 @@ void Converter::unloadStackBeforeOpenBracket() {
   !getStack().empty() && getStack().top().getLexeme() == '('
       ? getStack().pop()
       : throw std::logic_error("Unpaired brackets");
+  if (!getStack().empty() &&
+      getStack().top().getEntity() == EntityType::functions) {
+    getRpn().push_back(getStack().top());
+    getStack().pop();
+  }
 }
 
 void Converter::fullUnloadStack() {

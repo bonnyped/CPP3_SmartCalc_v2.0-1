@@ -25,10 +25,11 @@ void s21::Coocker::replaceFuncs() {
 
 void s21::Coocker::replaceMinus() {
   for (auto it = getStr().begin(); it != getStr().end(); ++it) {
-    if (*it == '-' && *(it - 1) != ')') {
+    if (*it == '-') {
       if (it == getStr().begin())
         *it = '~';
-      else if (!isdigit(*(it - 1)))
+      else if (!isdigit(*(it - 1)) && *(it - 1) != ')' &&
+               tolower(*(it - 1)) != 'e')
         *it = '~';
     }
   }

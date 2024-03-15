@@ -1,6 +1,6 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
-#include "./s21_test_smart_calc_cpp.h"
+#include "./test_smart_calc_cpp.h"
 
 int main(int argc, char *argv[]) {
   testing::InitGoogleTest(&argc, argv);

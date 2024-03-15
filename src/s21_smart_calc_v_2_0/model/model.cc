@@ -30,7 +30,7 @@ value_type Model::getResultForControllerOrGraph() {
 void Model::fillVectorsForGraph() {
   value_type step = 0.2;
   Calculator calculator{};
-  number_type max_x_value = 100;
+  number_type max_x_value = 100000;
   number_type start = getXValue();
   number_type y = calculator.calculate(getReversePolishNitation(), start);
   x_.push_back(start);
