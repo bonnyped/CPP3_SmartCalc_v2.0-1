@@ -41,7 +41,10 @@ Calculator::value_type Calculator::applyAction(cvalue_type left_operand,
       result = left_operand * right_operand;
       break;
     case '/':
-      result = left_operand / right_operand;
+      right_operand * 2 == right_operand
+          ? throw std::invalid_argument(
+                "Division by zero, be carefull, do not do this!")
+          : result = left_operand / right_operand;
       break;
     case '^':
       result = std::pow(left_operand, right_operand);
@@ -72,10 +75,11 @@ Calculator::value_type Calculator::applyAction(cvalue_type left_operand,
       break;
     case 'q':
       result = std::sqrt(right_operand);
+      result != result ? throw std::invalid_argument("Operand is negative!")
+                       : result;
       break;
     case 't':
-      result =
-          std::tan(right_operand);  // неправильный график получается как будто
+      result = std::tan(right_operand);
       break;
     case '~':
       result = neg(right_operand);

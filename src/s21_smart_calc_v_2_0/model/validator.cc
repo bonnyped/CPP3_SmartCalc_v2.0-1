@@ -17,5 +17,4 @@ void Validator::checkSequence(const vector_type &input) {
   }
   output_ = input;
 }
-
 }  // namespace s21

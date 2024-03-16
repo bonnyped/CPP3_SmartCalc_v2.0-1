@@ -9,20 +9,25 @@
   \author bonnyped
   \version 2.0
   \date март 2024 года
-  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно
+  программа не работает или работает не до конца, а только до середины
 */
-void s21::Coocker::removeWhitespaces() {
+
+namespace s21 {
+void Coocker::removeWhitespaces() {
   auto it = std::remove_if(getStr().begin(), getStr().end(), isspace);
   getStr().erase(it, getStr().end());
 }
 
-void s21::Coocker::tolowerStr() {
+void removeMoreThanOnePoint();
+
+void Coocker::tolowerStr() {
   for (auto elem = getStr().begin(); elem != getStr().end(); ++elem)
     *elem = tolower(*elem);
 }
 
-void s21::Coocker::replaceFuncs() {
-  s21::entitesMap Map;
+void Coocker::replaceFuncs() {
+  entitesMap Map;
   for (auto it = Map.getMap().begin(); it != Map.getMap().end(); ++it) {
     while (getStr().find(it->first) < getStr().size()) {
       getStr().replace(getStr().find(it->first), it->first.size(), it->second);
@@ -30,7 +35,7 @@ void s21::Coocker::replaceFuncs() {
   }
 }
 
-void s21::Coocker::replaceMinus() {
+void Coocker::replaceMinus() {
   for (auto it = getStr().begin(); it != getStr().end(); ++it) {
     if (*it == '-') {
       if (it == getStr().begin())
@@ -46,10 +51,11 @@ void s21::Coocker::replaceMinus() {
 
   \return подготовленную для дальнейшей обработки строку
 */
-s21::Coocker::reference s21::Coocker::preparingStr() {
+Coocker::reference Coocker::preparingStr() {
   removeWhitespaces();
   tolowerStr();
   replaceFuncs();
   replaceMinus();
   return getStr();
 }
+}  // namespace s21

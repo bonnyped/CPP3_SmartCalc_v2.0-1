@@ -130,3 +130,10 @@ TEST(parser, test7) {
   s21::Converter converter;
   EXPECT_THROW(converter.convertToRpn(b.getPreRpn()), std::logic_error);
 }
+
+TEST(parser, test8) {
+  std::string input = "0...2 - 4.3234234";
+  s21::Coocker a(input);
+  a.preparingStr();
+  EXPECT_THROW(s21::Parser b(a.getStr()), std::logic_error);
+}

@@ -2,6 +2,8 @@
 
 #include "parser.h"
 
+#include <stdexcept>
+
 namespace s21 {
 EntityType Parser::determEntity(const char &currentChar) {
   EntityType entity = EntityType::operations;
@@ -13,11 +15,13 @@ EntityType Parser::determEntity(const char &currentChar) {
 }
 
 /*!
-  \brief Функция проебразует строку в вектор токенов, определят сущность токена, обрабатывает числа с плавающей точки при помощи std:stod.
+  \brief Функция проебразует строку в вектор токенов, определят сущность токена,
+  обрабатывает числа с плавающей точки при помощи std:stod.
 
-  Функция решает задачу дополнительной более детальной и углубленной подготовки выражения, к дальнейшей обработке.
+  Функция решает задачу дополнительной более детальной и углубленной подготовки
+  выражения, к дальнейшей обработке.
 
-  \return Вектор заполненных данными токенов. 
+  \return Вектор заполненных данными токенов.
 */
 
 Parser::vector_reference Parser::convertToPreRpn(cstring_reference input) {
@@ -36,7 +40,12 @@ Parser::vector_reference Parser::convertToPreRpn(cstring_reference input) {
 size_type Parser::pushNumber(cstring_reference str, csize_type index,
                              cmap_reference map) {
   size_type shift = 0;
-  double number = std::stod(str, &shift);
+  double number = 0.0;
+  try {
+    number = std::stod(str, &shift);
+  } catch (std::invalid_argument &ex) {
+    throw std::logic_error("MOre then one floating point");
+  }
   Token toPush{map.find(1)->second};
   getPreRpn().push_back(toPush);
   getPreRpn().back().setNumber() = number;
@@ -48,5 +57,4 @@ Token Parser::getToken(clexeme_reference currentChar, cmap_reference map) {
   auto it = map.find(currentChar);
   return it != map.end() ? it->second : map.find(0)->second;
 }
-
 };  // namespace s21

@@ -492,6 +492,9 @@ QPushButton:pressed {
 
 background-color : white;</string>
    </property>
+   <property name="maxLength">
+    <number>255</number>
+   </property>
    <property name="placeholderText">
     <string> Edit expression </string>
    </property>

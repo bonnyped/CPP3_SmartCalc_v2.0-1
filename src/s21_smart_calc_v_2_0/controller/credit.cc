@@ -14,5 +14,4 @@ void ControllerVariedCalc::calcResultInModel() {
   calc_credit.calcCreditData();
   from_model_ = calc_credit.getOutput();
 }
-
 }  // namespace s21

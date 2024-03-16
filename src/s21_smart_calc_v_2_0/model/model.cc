@@ -5,7 +5,6 @@
 #include "../controller/smart_calc.h"
 
 namespace s21 {
-
 void Model::determReversePolishNitation() {
   Coocker coocker(getInputedString());
   Parser parser{};

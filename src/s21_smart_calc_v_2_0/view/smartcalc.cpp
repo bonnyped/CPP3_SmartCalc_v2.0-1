@@ -92,7 +92,7 @@ void SmartCalc::getDataFromView() {
 }
 
 void SmartCalc::giveResultToView(const double result) {
-  ui->resultCalc->setText(QString::number(result));
+  ui->resultCalc->setText(QString::number(result, 'g', 6));
 }
 
 void SmartCalc::fillGraph(const std::vector<double> &x,

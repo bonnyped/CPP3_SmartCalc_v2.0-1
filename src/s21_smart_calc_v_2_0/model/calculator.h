@@ -2,15 +2,15 @@
 
 /*!
   \file
-  \brief Класс производящий подсчет выражения, используюзий вектор токенов преобразованный в обратную польскую нотацию, с использованием стэка.
-  \author bonnyped
-  \version 2.0
-  \date март 2024 года
-  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+  \brief Класс производящий подсчет выражения, используюзий вектор токенов
+  преобразованный в обратную польскую нотацию, с использованием стэка. \author
+  bonnyped \version 2.0 \date март 2024 года \warning Пажалыстэ не душните, у
+  меня дедлайн горит, поэтому возможно программа не работает или работает не до
+  конца, а только до середины
 
-  Весь бэк находится в модели, взаимодействие модели с UI происходит через контроллер, и каждый
-  класс модели отвечает за определнную задачу, подробнее о классах можно прочесть в блоках 
-  описания классов. 
+  Весь бэк находится в модели, взаимодействие модели с UI происходит через
+  контроллер, и каждый класс модели отвечает за определнную задачу, подробнее о
+  классах можно прочесть в блоках описания классов.
 */
 
 #ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_CALCULATOR_H_
@@ -31,8 +31,8 @@ class Calculator {
   using cvalue_type = const double;
   using stack_type = std::stack<value_type>;
   using cvector_reference = const std::vector<s21::Token> &;
-  double applyAction(cvalue_type left_operand, cvalue_type right_operand,
-                     clexeme_reference operation);
+  value_type applyAction(cvalue_type left_operand, cvalue_type right_operand,
+                         clexeme_reference operation);
 
  public:
   Calculator() : calc_result_{} {}

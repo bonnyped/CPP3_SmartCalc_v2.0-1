@@ -1,12 +1,11 @@
-/*
-{#mainpage}
-*/
 
 # Вторая версия умного калькулятора, перерождение, перезагрузка.
 
-## Главный функционал:
+<center>
 
-![plot](/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/doxygen/s21smc.png)
+## Калькулятор
+
+<![plot](/home/bonnypedubuntu/21-school.ru/CPP/CPP3_SmartCalc_v2.0-1/src/doxygen/s21smc.png)>
 
 ## Кредитный калькулятор
 

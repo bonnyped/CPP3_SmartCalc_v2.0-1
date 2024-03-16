@@ -75,3 +75,13 @@ TEST(calculator, test13) {
   for (s21::size_type index = 0; index < a.getY().size(); ++index)
     EXPECT_DOUBLE_EQ(a.getY()[index], b.getY()[index]);
 }
+
+TEST(calculator, test14) {
+  s21::ControllerSmartCalc a("77 / 0", 0.0);
+  EXPECT_ANY_THROW(a.getResult());
+}
+
+TEST(calculator, test15) {
+  s21::ControllerSmartCalc a("sqrt(-0.000000000000000000001)", 0.0);
+  EXPECT_ANY_THROW(a.getResult());
+}

@@ -8,14 +8,10 @@ PREF_VIEW		= "./s21_smart_calc_v_2_0/view/"
 PREF_TEST 		= "tests/"
 OS         		=  $(shell uname -s)
 
-all: clang compile  
+all: clang install  
 
 clang: 
 	clang-format --style=GOOGLE -i $(PREF_MODEL)*.cc $(PREF_MODEL)*.h $(PREF_CONTROLLER)*.cc $(PREF_CONTROLLER)*.h $(PREF_VIEW)*.cpp $(PREF_VIEW)*.h  $(PREF_TEST)*.cc $(PREF_TEST)*.h
-
-compile:
-	$(CC) main.cpp $(PREF_MODEL)*.cc $(CCFLAGS)
-	./a.out
 
 install:
 	@cd ./s21_smart_calc_v_2_0/ && cmake .
@@ -38,6 +34,11 @@ else
 endif
 
 dist:
+	@rm -rf s21_smart_calc-2.0.tar
+	@cd  s21_smart_calc_v_2_0 && make
+	cp s21_smart_calc_v_2_0/s21smc .
+	tar -cf s21_smart_calc-2.0.tar s21smc
+	@rm -rf s21smc
 
 tests: clean
 	$(CC) -o $(PREF_TEST)test $(CCFLAGS) $(PREF_TEST)*.cc $(PREF_MODEL)*.cc $(PREF_CONTROLLER)*.cc $(TEST_FLAGS)
@@ -62,4 +63,7 @@ endif
 	@rm -rf ./report $(PREF_TEST)test
 
 clean:
-	rm -rf ./a.out $(PREF_TEST)test ./documentation
+	rm -rf ./a.out $(PREF_TEST)test ./documentation *.log *.tar
+
+leak: tests
+	CK_FORK=no valgrind --leak-check=full -s --track-origins=yes --log-file=leak.log $(PREF_TEST)test 

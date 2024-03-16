@@ -50,10 +50,10 @@ enum class Priority : int8_t {
   higest  ///< назначается для скобок, чтобы скобки не выталкивались из стэка
           ///< раньше времени
 };
-enum class Associativity : bool { 
-  left, ///< всё максимально просто 
-  right ///< и очевидно
-  };
+enum class Associativity : bool {
+  left,  ///< всё максимально просто
+  right  ///< и очевидно
+};
 
 using size_type = std::size_t;
 using csize_type = const size_type;
@@ -77,47 +77,47 @@ class Token {
         lexeme_(lexeme),
         priority_(priority),
         associativity_(associativity) {}
-/*!
-  \brief 
-  Геттер сущности 
-  \return сущность текущего токена
-  */
+  /*!
+    \brief
+    Геттер сущности
+    \return сущность текущего токена
+    */
   EntityType getEntity() const { return entity_; }
-/*!
-  \brief 
-  Геттер числа 
-  \return число текущего токена
-  */
+  /*!
+    \brief
+    Геттер числа
+    \return число текущего токена
+    */
   number_type getNumber() const { return number_; }
-/*!
-  \brief 
-  Сеттер числа 
-  \return ссылку на число текущего токена
-  */  
+  /*!
+    \brief
+    Сеттер числа
+    \return ссылку на число текущего токена
+    */
   number_reference setNumber() { return number_; }
-/*!
-  \brief 
-  Геттер лексемы 
-  \return константную ссылку на лексему текущего токена
-  */ 
+  /*!
+    \brief
+    Геттер лексемы
+    \return константную ссылку на лексему текущего токена
+    */
   clexeme_reference getLexeme() const { return lexeme_; }
-/*!
-  \brief 
-  Сеттер лексемы 
-  \return ссылку на лексему текущего токена
-  */  
+  /*!
+    \brief
+    Сеттер лексемы
+    \return ссылку на лексему текущего токена
+    */
   lexeme_reference setLexeme() { return lexeme_; }
-/*!
-  \brief 
-  Геттер приоритености 
-  \return ссылку на приоритетность текущего токена
-  */
+  /*!
+    \brief
+    Геттер приоритености
+    \return ссылку на приоритетность текущего токена
+    */
   cpriority_reference getPriority() const { return priority_; }
-/*!
-  \brief 
-  Геттер ассоциативности 
-  \return ссылку на ассоциативность текущего токена
-  */  
+  /*!
+    \brief
+    Геттер ассоциативности
+    \return ссылку на ассоциативность текущего токена
+    */
   Associativity getAssocitivity() const { return associativity_; }
 
  private:
@@ -134,10 +134,11 @@ using cmap_reference = const map_type &;
 
 class FillTokenMap {
  public:
- /*!
-  \brief 
-  Геттер словаря, необходим для поиска по мапе, для последующего заполнения токенами выходного вектора
-  */
+  /*!
+   \brief
+   Геттер словаря, необходим для поиска по мапе, для последующего заполнения
+   токенами выходного вектора
+   */
   cmap_reference getMap() { return map_; }
 
  private:

@@ -28,5 +28,4 @@ class ControllerSmartCalc {
   vector_type y_;
 };
 }  // namespace s21
-
 #endif  //  SRC_S21_SMART_CALC_V_2_0_CONTROLLER_SMART_CALC_H_
