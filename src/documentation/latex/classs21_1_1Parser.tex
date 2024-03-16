@@ -1,0 +1,37 @@
+\hypertarget{classs21_1_1Parser}{}\doxysection{Класс s21\+::Parser}
+\label{classs21_1_1Parser}\index{s21::Parser@{s21::Parser}}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+vector\+\_\+reference \mbox{\hyperlink{classs21_1_1Parser_a55a87f0f214383255e84bfaf42d07d49}{convert\+To\+Pre\+Rpn}} (cstring\+\_\+reference input)
+\begin{DoxyCompactList}\small\item\em Функция проебразует строку в вектор токенов, определят сущность токена, обрабатывает числа с плавающей точки при помощи std\+:stod. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classs21_1_1Parser_a19bab46275779195af36eda09521592d}\label{classs21_1_1Parser_a19bab46275779195af36eda09521592d}} 
+{\bfseries Parser} (cstring\+\_\+reference input)
+\item 
+\mbox{\Hypertarget{classs21_1_1Parser_accba9c1529d36eb3dc324cf70e7a385c}\label{classs21_1_1Parser_accba9c1529d36eb3dc324cf70e7a385c}} 
+vector\+\_\+reference \mbox{\hyperlink{classs21_1_1Parser_accba9c1529d36eb3dc324cf70e7a385c}{get\+Pre\+Rpn}} ()
+\begin{DoxyCompactList}\small\item\em Обычный геттер, преобразованной в вектор строки \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classs21_1_1Parser_a55a87f0f214383255e84bfaf42d07d49}\label{classs21_1_1Parser_a55a87f0f214383255e84bfaf42d07d49}} 
+\index{s21::Parser@{s21::Parser}!convertToPreRpn@{convertToPreRpn}}
+\index{convertToPreRpn@{convertToPreRpn}!s21::Parser@{s21::Parser}}
+\doxysubsubsection{\texorpdfstring{convertToPreRpn()}{convertToPreRpn()}}
+{\footnotesize\ttfamily Parser\+::vector\+\_\+reference s21\+::\+Parser\+::convert\+To\+Pre\+Rpn (\begin{DoxyParamCaption}\item[{cstring\+\_\+reference}]{input }\end{DoxyParamCaption})}
+
+
+
+Функция проебразует строку в вектор токенов, определят сущность токена, обрабатывает числа с плавающей точки при помощи std\+:stod. 
+
+Функция решает задачу дополнительной более детальной и углубленной подготовки выражения, к дальнейшей обработке.
+
+\begin{DoxyReturn}{Возвращает}
+Вектор заполненных данными токенов. 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+s21\+\_\+smart\+\_\+calc\+\_\+v\+\_\+2\+\_\+0/model/\mbox{\hyperlink{parser_8h}{parser.\+h}}\item 
+s21\+\_\+smart\+\_\+calc\+\_\+v\+\_\+2\+\_\+0/model/parser.\+cc\end{DoxyCompactItemize}

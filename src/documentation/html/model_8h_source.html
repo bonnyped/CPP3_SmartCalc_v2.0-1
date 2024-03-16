@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21 Smart Calc: Исходный файл s21_smart_calc_v_2_0/model/model.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">s21 Smart Calc
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Умный калькудятор с построением графиков тригонометрических функций, так же умеющий считать платеж по кредиту, общую выплату и переплату.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f8969ac9899427a791b24fb03122723a.html">s21_smart_calc_v_2_0</a></li><li class="navelem"><a class="el" href="dir_c9d1c62bc20639548f4aa551d4d48460.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">model.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="model_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// &quot;Copyright [2024] &lt;bonnyped, tg: @ltybcrf&gt;&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span><span class="preprocessor">#ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="calculator_8h.html">calculator.h</a>&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="converter_8h.html">converter.h</a>&quot;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="coocker_8h.html">coocker.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="credit_8h.html">credit.h</a>&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="parser_8h.html">parser.h</a>&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="token_8h.html">token.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="validator_8h.html">validator.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>s21 {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">using</span> size_type = std::size_t;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">using</span> csize_type = <span class="keyword">const</span> size_type;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">using</span> value_type = double;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">using</span> number_reference = value_type &amp;;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">using</span> cvalue_type = <span class="keyword">const</span> value_type;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">using</span> lexeme_type = char;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">using</span> lexeme_reference = lexeme_type &amp;;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using</span> clexeme_reference = <span class="keyword">const</span> lexeme_type &amp;;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">using</span> centity_reference = <span class="keyword">const</span> <a class="code" href="token_8h.html#a04c6a9c85e58a994ff881c55d440a565">EntityType</a> &amp;;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">using</span> priority_type = <a class="code" href="token_8h.html#ac3c5ba1106d8d54f0f6d0336e7a16d5b">Priority</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">using</span> cpriority_reference = <span class="keyword">const</span> <a class="code" href="token_8h.html#ac3c5ba1106d8d54f0f6d0336e7a16d5b">Priority</a> &amp;;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">using</span> vector_type = std::vector&lt;double&gt;;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">using</span> cvector_reference = <span class="keyword">const</span> vector_type &amp;;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">using</span> vector_token_type = std::vector&lt;s21::Token&gt;;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">using</span> cvector_token_type = <span class="keyword">const</span> vector_token_type &amp;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classs21_1_1Model.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="classs21_1_1Model.html">Model</a> {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">using</span> value_type = double;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">using</span> cvalue_type = <span class="keyword">const</span> value_type;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keyword">using</span> <a class="code" href="classs21_1_1Model.html">reference</a> = <a class="code" href="classs21_1_1Model.html">Model</a> &amp;;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keyword">using</span> string_type = std::string;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">using</span> cstring_reference = <span class="keyword">const</span> std::string &amp;;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <a class="code" href="classs21_1_1Model.html">Model</a>() {}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <a class="code" href="classs21_1_1Model.html">Model</a>(cstring_reference input, cvalue_type x_value)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      : result_(),</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        inputed_string_(input),</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        x_value_(x_value),</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        x_{},</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        y_{},</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        reverse_polish_notation_{} {}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keywordtype">void</span> determReversePolishNitation();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  value_type getResultForControllerOrGraph();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  string_type getInputedString() { <span class="keywordflow">return</span> inputed_string_; }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  value_type getXValue() { <span class="keywordflow">return</span> x_value_; }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  cvector_token_type getReversePolishNitation();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <span class="keywordtype">void</span> fillVectorsForGraph();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  cvector_reference getX() { <span class="keywordflow">return</span> x_; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  cvector_reference getY() { <span class="keywordflow">return</span> y_; }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  value_type result_;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  string_type inputed_string_{};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  value_type x_value_;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  vector_type x_;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  vector_type y_;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  vector_token_type reverse_polish_notation_;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}  <span class="comment">// namespace s21</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_</span></div>
+<div class="ttc" id="acalculator_8h_html"><div class="ttname"><a href="calculator_8h.html">calculator.h</a></div><div class="ttdoc">Класс производящий подсчет выражения, используюзий вектор токенов преобразованный в обратную польскую...</div></div>
+<div class="ttc" id="aclasss21_1_1Model_html"><div class="ttname"><a href="classs21_1_1Model.html">s21::Model</a></div><div class="ttdef"><b>Definition:</b> model.h:49</div></div>
+<div class="ttc" id="aconverter_8h_html"><div class="ttname"><a href="converter_8h.html">converter.h</a></div><div class="ttdoc">Класс конвертирующий подготовленный вектор токенов в вектор токенов в обратной польской нотации</div></div>
+<div class="ttc" id="acoocker_8h_html"><div class="ttname"><a href="coocker_8h.html">coocker.h</a></div><div class="ttdoc">Заголовочный файл класса заготовщика, который нужен для подготовки строки для последующей обработки.</div></div>
+<div class="ttc" id="acredit_8h_html"><div class="ttname"><a href="credit_8h.html">credit.h</a></div><div class="ttdoc">Содержит классы необходимый для рассчета показателей кредита</div></div>
+<div class="ttc" id="aparser_8h_html"><div class="ttname"><a href="parser_8h.html">parser.h</a></div><div class="ttdoc">Класс пасрит строку в вектор токенов, попутно определяя сущность лексемы и ее необходимые свойства дл...</div></div>
+<div class="ttc" id="atoken_8h_html"><div class="ttname"><a href="token_8h.html">token.h</a></div><div class="ttdoc">Класс для сбора информации о текущей лексеме.</div></div>
+<div class="ttc" id="atoken_8h_html_a04c6a9c85e58a994ff881c55d440a565"><div class="ttname"><a href="token_8h.html#a04c6a9c85e58a994ff881c55d440a565">s21::EntityType</a></div><div class="ttdeci">EntityType</div><div class="ttdef"><b>Definition:</b> token.h:28</div></div>
+<div class="ttc" id="atoken_8h_html_ac3c5ba1106d8d54f0f6d0336e7a16d5b"><div class="ttname"><a href="token_8h.html#ac3c5ba1106d8d54f0f6d0336e7a16d5b">s21::Priority</a></div><div class="ttdeci">Priority</div><div class="ttdef"><b>Definition:</b> token.h:44</div></div>
+<div class="ttc" id="avalidator_8h_html"><div class="ttname"><a href="validator_8h.html">validator.h</a></div><div class="ttdoc">Класс отвечающий за проверку последовательности, обеспечивает дальнейшую безопасную работу с польской...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

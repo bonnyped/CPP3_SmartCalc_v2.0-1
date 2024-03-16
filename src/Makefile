@@ -30,7 +30,7 @@ uninstall:
 	@cd ./s21_smart_calc_v_2_0/ && make clean
 
 .dvi:
-	doxygen gendoc_s21snc
+	doxygen doxygen/gendoc_s21snc
 ifeq ($(OS),Linux) 
 	xdg-open documentation/html/annotated.html
 else

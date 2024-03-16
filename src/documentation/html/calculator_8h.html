@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21 Smart Calc: Файл s21_smart_calc_v_2_0/model/calculator.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">s21 Smart Calc
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Умный калькудятор с построением графиков тригонометрических функций, так же умеющий считать платеж по кредиту, общую выплату и переплату.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f8969ac9899427a791b24fb03122723a.html">s21_smart_calc_v_2_0</a></li><li class="navelem"><a class="el" href="dir_c9d1c62bc20639548f4aa551d4d48460.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл calculator.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс производящий подсчет выражения, используюзий вектор токенов преобразованный в обратную польскую нотацию, с использованием стэка.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;stack&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="token_8h_source.html">token.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для calculator.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="calculator_8h__incl.png" border="0" usemap="#as21__smart__calc__v__2__0_2model_2calculator_8h" alt=""/></div>
+<map name="as21__smart__calc__v__2__0_2model_2calculator_8h" id="as21__smart__calc__v__2__0_2model_2calculator_8h">
+<area shape="rect" title="Класс производящий подсчет выражения, используюзий вектор токенов преобразованный в обратную польскую..." alt="" coords="209,5,371,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,68,121"/>
+<area shape="rect" title=" " alt="" coords="92,95,179,121"/>
+<area shape="rect" title=" " alt="" coords="203,95,283,121"/>
+<area shape="rect" title=" " alt="" coords="308,95,365,121"/>
+<area shape="rect" title=" " alt="" coords="389,95,452,121"/>
+<area shape="rect" href="token_8h.html" title="Класс для сбора информации о текущей лексеме." alt="" coords="476,95,547,121"/>
+<area shape="rect" title=" " alt="" coords="486,169,537,196"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="calculator_8h__dep__incl.png" border="0" usemap="#as21__smart__calc__v__2__0_2model_2calculator_8hdep" alt=""/></div>
+<map name="as21__smart__calc__v__2__0_2model_2calculator_8hdep" id="as21__smart__calc__v__2__0_2model_2calculator_8hdep">
+<area shape="rect" title="Класс производящий подсчет выражения, используюзий вектор токенов преобразованный в обратную польскую..." alt="" coords="5,5,167,47"/>
+<area shape="rect" href="model_8h.html" title="Это основной заголовочный файл модели в MVC проекта s21 Smart Calc." alt="" coords="9,95,163,136"/>
+</map>
+</div>
+</div>
+<p><a href="calculator_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Calculator.html">s21::Calculator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс производящий подсчет выражения, используюзий вектор токенов преобразованный в обратную польскую нотацию, с использованием стэка. </p>
+<dl class="section author"><dt>Автор</dt><dd>bonnyped </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>2.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>март 2024 года </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины</dd></dl>
+<p>Весь бэк находится в модели, взаимодействие модели с UI происходит через контроллер, и каждый класс модели отвечает за определнную задачу, подробнее о классах можно прочесть в блоках описания классов. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,199 @@
+\hypertarget{token_8h}{}\doxysection{Файл s21\+\_\+smart\+\_\+calc\+\_\+v\+\_\+2\+\_\+0/model/token.h}
+\label{token_8h}\index{s21\_smart\_calc\_v\_2\_0/model/token.h@{s21\_smart\_calc\_v\_2\_0/model/token.h}}
+
+
+Класс для сбора информации о текущей лексеме.  
+
+
+{\ttfamily \#include $<$map$>$}\newline
+Граф включаемых заголовочных файлов для token.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{token_8h__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{token_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classs21_1_1Token}{s21\+::\+Token}}
+\item 
+class \mbox{\hyperlink{classs21_1_1FillTokenMap}{s21\+::\+Fill\+Token\+Map}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Определения типов}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{token_8h_a9557d698cdb3fd0af8d885929d59f147}\label{token_8h_a9557d698cdb3fd0af8d885929d59f147}} 
+using {\bfseries s21\+::number\+\_\+type} = double
+\item 
+\mbox{\Hypertarget{token_8h_aa45a32cf000a582cd24aed67e2154817}\label{token_8h_aa45a32cf000a582cd24aed67e2154817}} 
+using {\bfseries s21\+::cnumber\+\_\+reference} = const number\+\_\+type \&
+\item 
+\mbox{\Hypertarget{token_8h_a4716160f190961e616fb744faa9912e5}\label{token_8h_a4716160f190961e616fb744faa9912e5}} 
+using {\bfseries s21\+::ctoken\+\_\+reference} = const Token \&
+\item 
+\mbox{\Hypertarget{token_8h_af3ad138e90ff6a7f0526dada960e2e54}\label{token_8h_af3ad138e90ff6a7f0526dada960e2e54}} 
+using {\bfseries s21\+::map\+\_\+type} = std\+::map$<$ char, Token $>$
+\item 
+\mbox{\Hypertarget{token_8h_a1465c65ec9f416b813f599d0d8aa04b9}\label{token_8h_a1465c65ec9f416b813f599d0d8aa04b9}} 
+using {\bfseries s21\+::cmap\+\_\+reference} = const map\+\_\+type \&
+\end{DoxyCompactItemize}
+\doxysubsection*{Перечисления}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565}{s21\+::\+Entity\+Type}} \+: int8\+\_\+t \{ \newline
+\mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565a0eaa46c12c8190dcb4e4b46838220683}{functions}}
+, \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565a49057168d24dc9566533ec48326ced2c}{numeric}}
+, \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565aba19a09a68a66f8ad972ef8a5fba6f0d}{operations}}
+, \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565a4087f1ffc05f4eab1b923856a05c6d12}{unary\+\_\+minus}}
+, \newline
+\mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565af5007c2af95d7f69ddc7d1ed96b401a0}{open\+Bracket}}
+, \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565a6ea711d0f6083729a1386418551aed70}{close\+Bracket}}
+, \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565a3d9a8484b77f5bfa3c056ebf33e0f874}{x\+Num}}
+, \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565abae60998ffe4923b131e3d6e4c19993e}{bad}}
+, \newline
+\mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565ab876edb1bc0b66516e79777b73ac5e18}{first\+\_\+sybol\+\_\+in\+\_\+string}}
+, \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565ae01d336d682649c20a590e987548e914}{last\+\_\+symbol\+\_\+in\+\_\+sytring}}
+ \}
+\item 
+enum class \mbox{\hyperlink{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5b}{s21\+::\+Priority}} \+: int8\+\_\+t \{ \newline
+\mbox{\hyperlink{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5bac701ea068fda7a1321da066ec47f21f0}{bad\+\_\+symbol}}
+, \mbox{\hyperlink{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5bad8bd79cc131920d5de426f914d17405a}{min}}
+, \mbox{\hyperlink{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5ba22384709d743fe3c6fb0a4b35b2e10a6}{mid}}
+, \mbox{\hyperlink{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5ba2ffe4e77325d9a7152f7086ea7aa5114}{max}}
+, \newline
+\mbox{\hyperlink{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5baf3a3b1fa53b305824958bd7e31ba03e6}{higest}}
+ \}
+\item 
+enum class \mbox{\hyperlink{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bc}{s21\+::\+Associativity}} \+: bool \{ \mbox{\hyperlink{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bca811882fecd5c7618d7099ebbd39ea254}{left}}
+, \mbox{\hyperlink{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bca7c4f29407893c334a6cb7a87bf045c0d}{right}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для сбора информации о текущей лексеме. 
+
+\begin{DoxyAuthor}{Автор}
+bonnyped 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+2.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+март 2024 года 
+\end{DoxyDate}
+\begin{DoxyWarning}{Предупреждения}
+Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+\end{DoxyWarning}
+Класс содержит в себе все необходимые для дальнешей работе с токенами информацией\+:
+\begin{DoxyItemize}
+\item Тип сущности
+\item Число (если токен не является числом, поле по умолчанию рвно 0)
+\item Лескема (если токен является числом, а не лексемой, поле по умолчанию равно 0)
+\item Приоритетность (для операций и скобок)
+\item Ассоциативность (для правоассоцитавных операций) 
+\end{DoxyItemize}
+
+\doxysubsection{Перечисления}
+\mbox{\Hypertarget{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bc}\label{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bc}} 
+\index{token.h@{token.h}!Associativity@{Associativity}}
+\index{Associativity@{Associativity}!token.h@{token.h}}
+\doxysubsubsection{\texorpdfstring{Associativity}{Associativity}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bc}{s21\+::\+Associativity}} \+: bool\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{left@{left}!token.h@{token.h}}\index{token.h@{token.h}!left@{left}}}\mbox{\Hypertarget{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bca811882fecd5c7618d7099ebbd39ea254}\label{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bca811882fecd5c7618d7099ebbd39ea254}} 
+left&всё максимально просто \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{right@{right}!token.h@{token.h}}\index{token.h@{token.h}!right@{right}}}\mbox{\Hypertarget{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bca7c4f29407893c334a6cb7a87bf045c0d}\label{token_8h_a161d9bae3e0103b7ec84a8ab419bb9bca7c4f29407893c334a6cb7a87bf045c0d}} 
+right&и очевидно \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565}} 
+\index{token.h@{token.h}!EntityType@{EntityType}}
+\index{EntityType@{EntityType}!token.h@{token.h}}
+\doxysubsubsection{\texorpdfstring{EntityType}{EntityType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{token_8h_a04c6a9c85e58a994ff881c55d440a565}{s21\+::\+Entity\+Type}} \+: int8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{functions@{functions}!token.h@{token.h}}\index{token.h@{token.h}!functions@{functions}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565a0eaa46c12c8190dcb4e4b46838220683}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565a0eaa46c12c8190dcb4e4b46838220683}} 
+functions&текущая токен -\/ тригонометрическая функция \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{numeric@{numeric}!token.h@{token.h}}\index{token.h@{token.h}!numeric@{numeric}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565a49057168d24dc9566533ec48326ced2c}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565a49057168d24dc9566533ec48326ced2c}} 
+numeric&текущий токен -\/ число \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{operations@{operations}!token.h@{token.h}}\index{token.h@{token.h}!operations@{operations}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565aba19a09a68a66f8ad972ef8a5fba6f0d}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565aba19a09a68a66f8ad972ef8a5fba6f0d}} 
+operations&текущий токен -\/ операция \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{unary\_minus@{unary\_minus}!token.h@{token.h}}\index{token.h@{token.h}!unary\_minus@{unary\_minus}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565a4087f1ffc05f4eab1b923856a05c6d12}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565a4087f1ffc05f4eab1b923856a05c6d12}} 
+unary\+\_\+minus&текущий токен -\/ унарный минус \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{openBracket@{openBracket}!token.h@{token.h}}\index{token.h@{token.h}!openBracket@{openBracket}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565af5007c2af95d7f69ddc7d1ed96b401a0}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565af5007c2af95d7f69ddc7d1ed96b401a0}} 
+open\+Bracket&текущий токен -\/ открывающая скобка \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{closeBracket@{closeBracket}!token.h@{token.h}}\index{token.h@{token.h}!closeBracket@{closeBracket}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565a6ea711d0f6083729a1386418551aed70}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565a6ea711d0f6083729a1386418551aed70}} 
+close\+Bracket&текущий токен -\/ закрывающая скобка \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{xNum@{xNum}!token.h@{token.h}}\index{token.h@{token.h}!xNum@{xNum}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565a3d9a8484b77f5bfa3c056ebf33e0f874}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565a3d9a8484b77f5bfa3c056ebf33e0f874}} 
+x\+Num&текущий токен -\/ значение подставляемое вместо X. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bad@{bad}!token.h@{token.h}}\index{token.h@{token.h}!bad@{bad}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565abae60998ffe4923b131e3d6e4c19993e}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565abae60998ffe4923b131e3d6e4c19993e}} 
+bad&текущий токен -\/ сущность любах других символов, попавших в строку. По сути -\/ ошибка \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{first\_sybol\_in\_string@{first\_sybol\_in\_string}!token.h@{token.h}}\index{token.h@{token.h}!first\_sybol\_in\_string@{first\_sybol\_in\_string}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565ab876edb1bc0b66516e79777b73ac5e18}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565ab876edb1bc0b66516e79777b73ac5e18}} 
+first\+\_\+sybol\+\_\+in\+\_\+string&это не токен, но сущность указывающая на то, что строка только началась (необходима для дальнейшей валидации данных) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{last\_symbol\_in\_sytring@{last\_symbol\_in\_sytring}!token.h@{token.h}}\index{token.h@{token.h}!last\_symbol\_in\_sytring@{last\_symbol\_in\_sytring}}}\mbox{\Hypertarget{token_8h_a04c6a9c85e58a994ff881c55d440a565ae01d336d682649c20a590e987548e914}\label{token_8h_a04c6a9c85e58a994ff881c55d440a565ae01d336d682649c20a590e987548e914}} 
+last\+\_\+symbol\+\_\+in\+\_\+sytring&аналогична предыдущей сущности, только противоположна \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5b}\label{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5b}} 
+\index{token.h@{token.h}!Priority@{Priority}}
+\index{Priority@{Priority}!token.h@{token.h}}
+\doxysubsubsection{\texorpdfstring{Priority}{Priority}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5b}{s21\+::\+Priority}} \+: int8\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Элементы перечислений}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bad\_symbol@{bad\_symbol}!token.h@{token.h}}\index{token.h@{token.h}!bad\_symbol@{bad\_symbol}}}\mbox{\Hypertarget{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5bac701ea068fda7a1321da066ec47f21f0}\label{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5bac701ea068fda7a1321da066ec47f21f0}} 
+bad\+\_\+symbol&дополнительно свидетельствует об ошибке введенных данных \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{min@{min}!token.h@{token.h}}\index{token.h@{token.h}!min@{min}}}\mbox{\Hypertarget{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5bad8bd79cc131920d5de426f914d17405a}\label{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5bad8bd79cc131920d5de426f914d17405a}} 
+min&назначается для операций сложени и вычитания, а также взятию остатка от деления \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mid@{mid}!token.h@{token.h}}\index{token.h@{token.h}!mid@{mid}}}\mbox{\Hypertarget{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5ba22384709d743fe3c6fb0a4b35b2e10a6}\label{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5ba22384709d743fe3c6fb0a4b35b2e10a6}} 
+mid&назначается для операций произведения и деления \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{max@{max}!token.h@{token.h}}\index{token.h@{token.h}!max@{max}}}\mbox{\Hypertarget{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5ba2ffe4e77325d9a7152f7086ea7aa5114}\label{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5ba2ffe4e77325d9a7152f7086ea7aa5114}} 
+max&назначается для операции возведения в степень \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{higest@{higest}!token.h@{token.h}}\index{token.h@{token.h}!higest@{higest}}}\mbox{\Hypertarget{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5baf3a3b1fa53b305824958bd7e31ba03e6}\label{token_8h_ac3c5ba1106d8d54f0f6d0336e7a16d5baf3a3b1fa53b305824958bd7e31ba03e6}} 
+higest&назначается для скобок, чтобы скобки не выталкивались из стэка раньше времени \\
+\hline
+
+\end{DoxyEnumFields}

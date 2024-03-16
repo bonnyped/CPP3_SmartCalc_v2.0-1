@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21 Smart Calc: Файл s21_smart_calc_v_2_0/model/model.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">s21 Smart Calc
+   &#160;<span id="projectnumber">2.0</span>
+   </div>
+   <div id="projectbrief">Умный калькудятор с построением графиков тригонометрических функций, так же умеющий считать платеж по кредиту, общую выплату и переплату.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f8969ac9899427a791b24fb03122723a.html">s21_smart_calc_v_2_0</a></li><li class="navelem"><a class="el" href="dir_c9d1c62bc20639548f4aa551d4d48460.html">model</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл model.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Это основной заголовочный файл модели в MVC проекта s21 Smart Calc.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;cctype&gt;</code><br />
+<code>#include &lt;queue&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="calculator_8h_source.html">calculator.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="converter_8h_source.html">converter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="coocker_8h_source.html">coocker.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="credit_8h_source.html">credit.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parser_8h_source.html">parser.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="token_8h_source.html">token.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="validator_8h_source.html">validator.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для model.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="model_8h__incl.png" border="0" usemap="#as21__smart__calc__v__2__0_2model_2model_8h" alt=""/></div>
+<map name="as21__smart__calc__v__2__0_2model_2model_8h" id="as21__smart__calc__v__2__0_2model_2model_8h">
+<area shape="rect" title="Это основной заголовочный файл модели в MVC проекта s21 Smart Calc." alt="" coords="466,5,619,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,91,121"/>
+<area shape="rect" title=" " alt="" coords="115,95,181,121"/>
+<area shape="rect" title=" " alt="" coords="205,95,267,121"/>
+<area shape="rect" title=" " alt="" coords="739,244,797,271"/>
+<area shape="rect" title=" " alt="" coords="963,244,1026,271"/>
+<area shape="rect" href="calculator_8h.html" title="Класс производящий подсчет выражения, используюзий вектор токенов преобразованный в обратную польскую..." alt="" coords="630,95,727,121"/>
+<area shape="rect" href="token_8h.html" title="Класс для сбора информации о текущей лексеме." alt="" coords="1141,244,1211,271"/>
+<area shape="rect" href="converter_8h.html" title="Класс конвертирующий подготовленный вектор токенов в вектор токенов в обратной польской нотации" alt="" coords="906,95,1001,121"/>
+<area shape="rect" href="parser_8h.html" title="Класс пасрит строку в вектор токенов, попутно определяя сущность лексемы и ее необходимые свойства дл..." alt="" coords="1032,169,1107,196"/>
+<area shape="rect" href="coocker_8h.html" title="Заголовочный файл класса заготовщика, который нужен для подготовки строки для последующей обработки." alt="" coords="236,169,319,196"/>
+<area shape="rect" href="credit_8h.html" title="Содержит классы необходимый для рассчета показателей кредита" alt="" coords="1446,95,1517,121"/>
+<area shape="rect" href="validator_8h.html" title="Класс отвечающий за проверку последовательности, обеспечивает дальнейшую безопасную работу с польской..." alt="" coords="1211,95,1301,121"/>
+<area shape="rect" title=" " alt="" coords="549,169,611,196"/>
+<area shape="rect" title=" " alt="" coords="635,169,722,196"/>
+<area shape="rect" title=" " alt="" coords="444,169,524,196"/>
+<area shape="rect" title=" " alt="" coords="849,169,906,196"/>
+<area shape="rect" title=" " alt="" coords="1151,319,1201,345"/>
+<area shape="rect" title=" " alt="" coords="1131,169,1218,196"/>
+<area shape="rect" title=" " alt="" coords="1282,244,1342,271"/>
+</map>
+</div>
+</div>
+<p><a href="model_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classs21_1_1Model.html">s21::Model</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:ac33e26403c3efd0678ee6c9b6bab7029"><td class="memItemLeft" align="right" valign="top"><a id="ac33e26403c3efd0678ee6c9b6bab7029"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::size_type</b> = std::size_t</td></tr>
+<tr class="separator:ac33e26403c3efd0678ee6c9b6bab7029"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d2d36ac0cc21250755aa4ef1443f107"><td class="memItemLeft" align="right" valign="top"><a id="a1d2d36ac0cc21250755aa4ef1443f107"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::csize_type</b> = const size_type</td></tr>
+<tr class="separator:a1d2d36ac0cc21250755aa4ef1443f107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ccd33faa059e4952bf4343871da892"><td class="memItemLeft" align="right" valign="top"><a id="a33ccd33faa059e4952bf4343871da892"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::value_type</b> = double</td></tr>
+<tr class="separator:a33ccd33faa059e4952bf4343871da892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab44210f7cf02453365bd592adf17792"><td class="memItemLeft" align="right" valign="top"><a id="aab44210f7cf02453365bd592adf17792"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::number_reference</b> = value_type &amp;</td></tr>
+<tr class="separator:aab44210f7cf02453365bd592adf17792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e810f4971a32274b35fb1898bd3cd0"><td class="memItemLeft" align="right" valign="top"><a id="a24e810f4971a32274b35fb1898bd3cd0"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::cvalue_type</b> = const value_type</td></tr>
+<tr class="separator:a24e810f4971a32274b35fb1898bd3cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda34c4ce7953e9d8941586115541df2"><td class="memItemLeft" align="right" valign="top"><a id="aeda34c4ce7953e9d8941586115541df2"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::lexeme_type</b> = char</td></tr>
+<tr class="separator:aeda34c4ce7953e9d8941586115541df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70521874996c61d365403150a0f2bda"><td class="memItemLeft" align="right" valign="top"><a id="af70521874996c61d365403150a0f2bda"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::lexeme_reference</b> = lexeme_type &amp;</td></tr>
+<tr class="separator:af70521874996c61d365403150a0f2bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af14b5592d19bc07f89f93b8b74a2fa4a"><td class="memItemLeft" align="right" valign="top"><a id="af14b5592d19bc07f89f93b8b74a2fa4a"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::clexeme_reference</b> = const lexeme_type &amp;</td></tr>
+<tr class="separator:af14b5592d19bc07f89f93b8b74a2fa4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2389adc1477c4dea4bb5abb98669e091"><td class="memItemLeft" align="right" valign="top"><a id="a2389adc1477c4dea4bb5abb98669e091"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::centity_reference</b> = const EntityType &amp;</td></tr>
+<tr class="separator:a2389adc1477c4dea4bb5abb98669e091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bdad0af0149876daf4106080c0828aa"><td class="memItemLeft" align="right" valign="top"><a id="a8bdad0af0149876daf4106080c0828aa"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::priority_type</b> = Priority</td></tr>
+<tr class="separator:a8bdad0af0149876daf4106080c0828aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a53e23519797731fd5aad6a592e71e"><td class="memItemLeft" align="right" valign="top"><a id="a24a53e23519797731fd5aad6a592e71e"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::cpriority_reference</b> = const Priority &amp;</td></tr>
+<tr class="separator:a24a53e23519797731fd5aad6a592e71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67c8b6ffa2d2c9db5c955045e3275ace"><td class="memItemLeft" align="right" valign="top"><a id="a67c8b6ffa2d2c9db5c955045e3275ace"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::vector_type</b> = std::vector&lt; double &gt;</td></tr>
+<tr class="separator:a67c8b6ffa2d2c9db5c955045e3275ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a622ea7329fd876e1feb937dbce589dac"><td class="memItemLeft" align="right" valign="top"><a id="a622ea7329fd876e1feb937dbce589dac"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::cvector_reference</b> = const vector_type &amp;</td></tr>
+<tr class="separator:a622ea7329fd876e1feb937dbce589dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa80424d45d59b210d661b3f03e96295d"><td class="memItemLeft" align="right" valign="top"><a id="aa80424d45d59b210d661b3f03e96295d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::vector_token_type</b> = std::vector&lt; <a class="el" href="classs21_1_1Token.html">s21::Token</a> &gt;</td></tr>
+<tr class="separator:aa80424d45d59b210d661b3f03e96295d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0d166468771b2d1763cafdd9cb598d1"><td class="memItemLeft" align="right" valign="top"><a id="aa0d166468771b2d1763cafdd9cb598d1"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>s21::cvector_token_type</b> = const vector_token_type &amp;</td></tr>
+<tr class="separator:aa0d166468771b2d1763cafdd9cb598d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Это основной заголовочный файл модели в MVC проекта s21 Smart Calc. </p>
+<dl class="section author"><dt>Автор</dt><dd>bonnyped </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>2.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>март 2024 года </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины</dd></dl>
+<p>Весь бэк находится в модели, взаимодействие модели с UI происходит через контроллер, и каждый класс модели отвечает за определнную задачу, подробнее о классах можно прочесть в блоках описания классов. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
