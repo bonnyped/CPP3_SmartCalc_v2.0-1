@@ -1,5 +1,14 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
+/*!
+  \file
+  \brief Содержит классы необходимый для рассчета показателей кредита
+  \author bonnyped
+  \version 2.0
+  \date март 2024 года
+  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+*/
+
 #ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_CREDIT_H_
 #define SRC_S21_SMART_CALC_V_2_0_MODEL_CREDIT_H_
 
@@ -18,6 +27,15 @@ struct Output {
   double total_payment_;
 };
 
+/*!
+  \class
+  \brief Класс кредитного калькулятора, умеет рассчитывать аннуитетный платеж
+  \author bonnyped
+  \version 2.0
+  \date март 2024 года
+  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+*/
+
 class AnnuityCreditCalc {
  public:
   AnnuityCreditCalc() {}
@@ -29,6 +47,15 @@ class AnnuityCreditCalc {
   Input input_;
   Output output_;
 };
+
+/*!
+  \file
+  \brief Класс кредитного калькулятора, умеет рассчитывать диффиренцированный платеж
+  \author bonnyped
+  \version 2.0
+  \date март 2024 года
+  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+*/
 
 class VariedCreditCalc {
  private:

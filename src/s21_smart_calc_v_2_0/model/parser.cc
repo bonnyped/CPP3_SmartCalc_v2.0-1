@@ -12,6 +12,14 @@ EntityType Parser::determEntity(const char &currentChar) {
   return entity;
 }
 
+/*!
+  \brief Функция проебразует строку в вектор токенов, определят сущность токена, обрабатывает числа с плавающей точки при помощи std:stod.
+
+  Функция решает задачу дополнительной более детальной и углубленной подготовки выражения, к дальнейшей обработке.
+
+  \return Вектор заполненных данными токенов. 
+*/
+
 Parser::vector_reference Parser::convertToPreRpn(cstring_reference input) {
   FillTokenMap map{};
   for (size_type index = 0; index < input.size(); ++index) {

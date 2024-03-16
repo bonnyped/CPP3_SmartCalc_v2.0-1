@@ -8,7 +8,6 @@ PREF_VIEW		= "./s21_smart_calc_v_2_0/view/"
 PREF_TEST 		= "tests/"
 OS         		=  $(shell uname -s)
 
-
 all: clang compile  
 
 clang: 
@@ -19,12 +18,24 @@ compile:
 	./a.out
 
 install:
+	@cd ./s21_smart_calc_v_2_0/ && cmake .
+	@cd ./s21_smart_calc_v_2_0/ && make
+	cd ..
+	mkdir run/
+	cp ./s21_smart_calc_v_2_0/./s21smc ./run/
+	run/./s21smc
 
 uninstall:
+	@rm -rf ./run
+	@cd ./s21_smart_calc_v_2_0/ && make clean
 
-dvi:
-	sudo apt install texinfo
-	makeinfo файл
+.dvi:
+	doxygen gendoc_s21snc
+ifeq ($(OS),Linux) 
+	xdg-open documentation/html/annotated.html
+else
+	open -a "Google Chrome" documentation/html/annotated.html
+endif
 
 dist:
 
@@ -51,4 +62,4 @@ endif
 	@rm -rf ./report $(PREF_TEST)test
 
 clean:
-	rm -rf ./a.out $(PREF_TEST)test  
+	rm -rf ./a.out $(PREF_TEST)test ./documentation

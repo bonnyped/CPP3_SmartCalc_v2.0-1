@@ -1,5 +1,15 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
 
+/*!
+  \file
+  \brief Класс отвечающий за проверку последовательности, обеспечивает дальнейшую безопасную работу с польской нотацией.
+  \author bonnyped
+  \version 2.0
+  \date март 2024 года
+  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+  \throw std::logic_error("Error of sequence") бросает исключение в случае ошибки последовательности
+*/
+
 #ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_VALIDATOR_H_
 #define SRC_S21_SMART_CALC_V_2_0_MODEL_VALIDATOR_H_
 

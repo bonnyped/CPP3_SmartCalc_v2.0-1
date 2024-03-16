@@ -4,6 +4,13 @@
 
 #include <functional>
 
+/*!
+  \file
+  \author bonnyped
+  \version 2.0
+  \date март 2024 года
+  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+*/
 void s21::Coocker::removeWhitespaces() {
   auto it = std::remove_if(getStr().begin(), getStr().end(), isspace);
   getStr().erase(it, getStr().end());
@@ -34,7 +41,11 @@ void s21::Coocker::replaceMinus() {
     }
   }
 }
+/*!
+  \brief  функция применяет скрытые методы класса Coocker
 
+  \return подготовленную для дальнейшей обработки строку
+*/
 s21::Coocker::reference s21::Coocker::preparingStr() {
   removeWhitespaces();
   tolowerStr();

@@ -1,11 +1,22 @@
 // "Copyright [2024] <bonnyped, tg: @ltybcrf>"
+/*!
+  \file
+  \brief Это основной заголовочный файл модели в MVC проекта s21 Smart Calc
+  \author bonnyped
+  \version 2.0
+  \date март 2024 года
+  \warning Пажалыстэ не душните, у меня дедлайн горит, поэтому возможно программа не работает или работает не до конца, а только до середины
+
+  Весь бэк находится в модели, взаимодействие модели с UI происходит через контроллер, и каждый
+  класс модели отвечает за определнную задачу, подробнее о классах можно прочесть в блоках 
+  описания классов. 
+*/
 
 #ifndef SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_
 #define SRC_S21_SMART_CALC_V_2_0_MODEL_MODEL_H_
 
 #include <algorithm>
 #include <cctype>
-#include <iostream>
 #include <queue>
 #include <string>
 #include <vector>
