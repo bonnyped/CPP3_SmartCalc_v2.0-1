@@ -16,7 +16,7 @@
   <widget class="QSpinBox" name="spinBoxTermCredit">
    <property name="geometry">
     <rect>
-     <x>402</x>
+     <x>382</x>
      <y>72</y>
      <width>351</width>
      <height>61</height>
@@ -43,7 +43,7 @@
   <widget class="QRadioButton" name="radioButtonDifferential">
    <property name="geometry">
     <rect>
-     <x>410</x>
+     <x>390</x>
      <y>380</y>
      <width>251</width>
      <height>61</height>
@@ -65,7 +65,7 @@
   <widget class="QDoubleSpinBox" name="doubleSpinLoanBody">
    <property name="geometry">
     <rect>
-     <x>402</x>
+     <x>382</x>
      <y>10</y>
      <width>351</width>
      <height>61</height>
@@ -92,7 +92,7 @@
   <widget class="QLineEdit" name="lineEditTotalPaymentResult">
    <property name="geometry">
     <rect>
-     <x>402</x>
+     <x>382</x>
      <y>320</y>
      <width>351</width>
      <height>61</height>
@@ -113,7 +113,7 @@
   <widget class="QLabel" name="labelTotalPaymentsCredit">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>320</y>
      <width>351</width>
      <height>61</height>
@@ -142,7 +142,7 @@
   <widget class="QRadioButton" name="radioButtonAnnuitete">
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>100</x>
      <y>380</y>
      <width>251</width>
      <height>61</height>
@@ -167,7 +167,7 @@
   <widget class="QLineEdit" name="lineEditMonthlyPaymentResult">
    <property name="geometry">
     <rect>
-     <x>402</x>
+     <x>382</x>
      <y>196</y>
      <width>351</width>
      <height>61</height>
@@ -188,7 +188,7 @@
   <widget class="QPushButton" name="CalcCredit">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>440</y>
      <width>703</width>
      <height>61</height>
@@ -219,7 +219,7 @@ QPushButton:pressed {
   <widget class="QLabel" name="labelMonthlyPayment">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>196</y>
      <width>351</width>
      <height>61</height>
@@ -248,7 +248,7 @@ QPushButton:pressed {
   <widget class="QLabel" name="labelLoanOverpay">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>258</y>
      <width>351</width>
      <height>61</height>
@@ -277,7 +277,7 @@ QPushButton:pressed {
   <widget class="QLineEdit" name="lineEditOverpayResult">
    <property name="geometry">
     <rect>
-     <x>402</x>
+     <x>382</x>
      <y>258</y>
      <width>351</width>
      <height>61</height>
@@ -298,7 +298,7 @@ QPushButton:pressed {
   <widget class="QLabel" name="labelPeriodInterest">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>134</y>
      <width>351</width>
      <height>61</height>
@@ -327,7 +327,7 @@ background-color: rgb(155, 181, 137);
   <widget class="QLabel" name="labelTermCredit">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>72</y>
      <width>351</width>
      <height>61</height>
@@ -356,7 +356,7 @@ background-color: rgb(155, 181, 137);
   <widget class="QDoubleSpinBox" name="doubleSpinInterestCredit">
    <property name="geometry">
     <rect>
-     <x>402</x>
+     <x>382</x>
      <y>134</y>
      <width>351</width>
      <height>61</height>
@@ -383,7 +383,7 @@ background-color: rgb(155, 181, 137);
   <widget class="QLabel" name="labelLoanBodyCredit">
    <property name="geometry">
     <rect>
-     <x>50</x>
+     <x>30</x>
      <y>10</y>
      <width>351</width>
      <height>61</height>
